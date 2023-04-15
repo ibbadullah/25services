@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Best QR Code Generator{% endblock %}
+
+{% block description %}Generate the QR code with help of a QR code generator. It generates different QR codes for emails, phone numbers, and much more. It is totally free and easy to use.{% endblock %}
+{% block keywords %}best qr code generator,best free qr code generator,random qr code generator,online qr code generator free,best truly free online qr code generator{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}Best QR Code Generator{% endblock %}
+{% block ogdescription %}Generate the QR code with help of a QR code generator. It generates different QR codes for emails, phone numbers, and much more. It is totally free and easy to use.{% endblock %}
+{% block ogurl %}https://25services.com/qr-code-generator/{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/ServiceImages/20_qr_code_generator.jpg' %}{% endblock %}
+
+{% block twittertitle %}Best QR Code Generator{% endblock %}
+{% block twitterdescription %}Generate the QR code with help of a QR code generator. It generates different QR codes for emails, phone numbers, and much more. It is totally free and easy to use.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/ServiceImages/20_qr_code_generator.jpg' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/qr-code-generator/{% endblock %}
+
+
+{% block stylesheet %}
+
+    <style>
+    body{
+        background-color: cadetblue;
+    }
+
+    #text{
+
+            height:150px;
+            width:100%;
+                     }
+
+
+            img{
+            height:300px;
+            width:300px;
+
+            color:red;
+                         }
+
+            select{
+                width: 40%;
+                padding: 16px 20px;
+                border: none;
+
+                         }
+            .but{
+            width: 40%;
+              padding: 16px 20px;
+              border: none;
+
+
+                         }
+            a{
+              text-decoration:none ;
+                color: white;         }
+
+            #lin{
+                text-decoration: none;
+                color: white!important;
+            }
+            #generateBtn{
+                display: none;
+            }
+
+
+            #donwloadDiv{
+                display: none;
+            }
+
+    </style>
+{% endblock %}
+
+
+{% block content %}
+
+
+
+
+<div class="container jumbotron" onclick="displayBtn()" style="margin-top: 100px; margin-bottom: 30px;">
+
+<div>
+<h1>Best QR Code Generator</h1>
+</div>
+
+<div class="form-group">
+<select id="type" class="form-control btn-info">
+    <option value="" selected disabled>Select the type</option>
+    <option value="">For Text</option>
+    <option value="http://">For Link</option>
+    <option value="tel%3A%2B">For Phone number(contact)</option>
+    <option value="Your Password Is:">For Password</option>
+    <option value="">For Email</option>
+</select>
+</div>
+
+<div class="form-group">
+<textarea onfocusout ="checkLength()"  id="text" class="form-control" placeholder="Type here . .  .&#10;&#10; Attention  Please! &#10;If you generate an email in QR code so use the formate like this abc@gmail.com or abc@gmail.net etc.
+if you generate a contact number Must use the country code without adding + sign."></textarea>
+</div>
+
+
+
+<div class="form-group">
+<button id="generateBtn" onclick="make()" class="but btn btn-info">Generate QR</button>
+<button class="btn btn-info container" id="displyBtn">Next</button>
+</div>
+
+<br>
+<div id="donwloadDiv">
+
+<img src="" id="qr" alt="QR code Appear HERE after Generate"/>
+<br>
+<br>
+<div class="form-group">
+<button class="but btn-info btn-sm"><a href="" id="lin">DOWNLOAD As PNG!</a></button>
+</div>
+</div>
+
+<script type="text/javascript">
+
+
+
+
+
+
+    var type=document.getElementById("type");
+    var text=document.getElementById("text");
+     var qr=document.getElementById("qr");
+     function make() {
+     var x=text.value;
+     var y=type.value;
+     var lin=document.getElementById("lin");
+    qr.src="https://api.qrserver.com/v1/create-qr-code/?data="+y+x+"&size=300x300&margin=1";
+    lin.href="http://api.qrserver.com/v1/create-qr-code/?color=000000&bgcolor=FFFFFF&data="+y+x+"&qzone=1&margin=1&size=500x500&ecc=L&download=1";}
+
+
+
+
+    function displayBtn(){
+        var textArea = document.getElementById('text').value;
+        var generateBtn = document.getElementById('generateBtn');
+        var showDownload = document.getElementById('donwloadDiv');
+
+        if (textArea.length>2){
+            generateBtn.style.display="inline-block";
+            document.getElementById('displyBtn').style.display="none";
+            showDownload.style.display='inline-block';
+
+        }
+
+    }
+
+    function checkLength(){
+        var textArea = document.getElementById('text').value;
+        var generateBtn = document.getElementById('generateBtn');
+        var showDownload = document.getElementById('donwloadDiv');
+
+        if (textArea.length<3){
+            generateBtn.style.display="none";
+            document.getElementById('displyBtn').style.display="inline-block";
+            showDownload.style.display='none';
+        }
+    }
+
+
+
+
+
+</script>
+
+<br>
+
+
+<marquee style="color:cadetblue;">Brought to you by 25Services.com</marquee>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</div>
+
+{% endblock %}

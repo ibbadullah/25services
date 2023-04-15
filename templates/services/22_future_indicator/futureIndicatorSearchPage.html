@@ -1,0 +1,4097 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{ NameU }} Future Indicator{% endblock %}
+
+{% block description %}Check {{ NameU }} future. See how much cars, houses, bank balance {{ NameU }} would have in the future. Its just for fun.{% endblock %}
+{% block keywords %}{{ NameU }} future,{{ NameU }} future indicator{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}{{ NameU }} Future Indicator{% endblock %}
+{% block ogdescription %}Check {{ NameU }} future. See how much cars, houses, bank balance {{ NameU }} would have in the future. Its just for fun.{% endblock %}
+{% block ogurl %}https://25services.com/indicate-future?name={{ UrlName }}&gender={{ Gender }}{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/ServiceImages/22_future_indicator.jpg' %}{% endblock %}
+
+{% block twittertitle %}{{ NameU }} Future Indicator{% endblock %}
+{% block twitterdescription %}Check {{ NameU }} future. See how much cars, houses, bank balance {{ NameU }} would have in the future. Its just for fun.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/ServiceImages/22_future_indicator.jpg' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/indicate-future?name={{ UrlName }}&gender={{ Gender }}{% endblock %}
+
+
+{% block stylesheet %}
+
+   <style>
+     body{
+       background-color: wheat;
+     }
+
+     .contentContianer{
+      margin-top: 50px;
+      background-color: white;
+      border-radius: 10px;
+     }
+     .contentContianer h3{
+      margin-left:15%;
+      font-weight: 400;
+     }
+
+     .casesRow{
+       width: 100%;
+       margin:0px;
+       padding: 0px;
+     }
+     .imageDiv{
+
+       text-align: center;
+
+     }
+     .imageDiv img{
+
+       height: 150px;
+       width: 150px;
+       display: flex;
+       margin-left: auto;
+       margin-right: auto;
+       position: relative;
+     }
+     .textDiv{
+
+       text-align: center !important;
+       justify-content: center;
+       align-items: center;
+       position: relative;
+       display: flex;
+
+
+     }
+
+     .textDiv h5{
+       font-size: 24px;
+
+
+     }
+
+     .numberSpan{
+       color:green;
+       font-weight: 600;
+     }
+
+     #copyMessaage{
+         position: fixed;
+         bottom: 115px;
+         right: 15px;
+         color: white;
+         background-color: black;
+         padding: 5px;
+         border-radius: 5px;
+         display: none;
+     }
+
+     .shareButton{
+       position: fixed;
+       bottom: 80px;
+       right: 15px;
+       background-color: #3B3998;
+       color: white;
+       padding: 5px 10px 5px 10px;
+       border-style: none;
+       outline: none;
+       border-radius: 6px;
+
+     }
+
+     .shareButton:hover
+     {color:#4CA39B !important;
+       }
+
+    </style>
+{% endblock %}
+
+{% block content %}
+<br><br>
+<div class="container contentContianer">
+  <br>
+  <h3>{{ NameU }} Future Indicator:</h3>
+  <hr>
+
+    {% if Name == "a" and Gender == "Male" %}
+
+        <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>Your job will be: <span class="numberSpan">Civil Engineer</span>.</h5>
+            </div>
+          </div>
+          <hr>
+
+           <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>Your salary will be <span class="numberSpan">$4660</span>.</h5>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>You will have <span class="numberSpan">5</span> houses.</h5>
+            </div>
+          </div>
+          <hr>
+
+
+         <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/children.png' %}" alt="Childrens">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>You will have <span class="numberSpan">2</span> Childrens.</h5>
+            </div>
+          </div>
+          <hr>
+
+        <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>Your bank balance will be <span class="numberSpan">1.5 Million US Dollars</span>.</h5>
+            </div>
+          </div>
+          <hr>
+
+
+
+
+    {% elif Name == "b" and Gender == "Male" %}
+
+        <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>Your job will be: <span class="numberSpan">Doctor</span>.</h5>
+            </div>
+          </div>
+          <hr>
+
+
+           <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>Your salary will be <span class="numberSpan">$7997</span>.</h5>
+            </div>
+          </div>
+          <hr>
+
+
+
+          <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>You will have <span class="numberSpan">1</span> house.</h5>
+            </div>
+          </div>
+          <hr>
+
+
+         <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>You will have <span class="numberSpan">2</span> Cars.</h5>
+            </div>
+          </div>
+          <hr>
+
+
+
+        <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/children.png' %}" alt="Bank Balance">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>Your bank balance will be <span class="numberSpan">2</span> wives.</h5>
+            </div>
+          </div>
+          <hr>
+
+
+
+
+
+
+
+          {% elif Name == "c" and Gender == "Male" %}
+
+          <div class="row casesRow">
+              <div class="col-6 imageDiv">
+                  <img src="{% static 'images/22_future_indicator/car.png' %}" alt="car">
+              </div>
+
+              <div class="col-6 textDiv" >
+                <h5>You will have: <span class="numberSpan">2 cars</span>.</h5>
+              </div>
+            </div>
+            <hr>
+
+
+             <div class="row casesRow">
+              <div class="col-6 imageDiv">
+                  <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+              </div>
+
+              <div class="col-6 textDiv" >
+                <h5>Your salary will be:<span class="numberSpan">$9644</span>.</h5>
+              </div>
+            </div>
+            <hr>
+
+
+
+            <div class="row casesRow">
+              <div class="col-6 imageDiv">
+                  <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+              </div>
+
+              <div class="col-6 textDiv" >
+                <h5>You will have <span class="numberSpan">3</span> houses.</h5>
+              </div>
+            </div>
+            <hr>
+
+
+           <div class="row casesRow">
+              <div class="col-6 imageDiv">
+                  <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wife">
+              </div>
+
+              <div class="col-6 textDiv" >
+                <h5>You will have <span class="numberSpan">1</span> Wife.</h5>
+              </div>
+            </div>
+            <hr>
+
+
+
+          <div class="row casesRow">
+              <div class="col-6 imageDiv">
+                  <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+              </div>
+
+              <div class="col-6 textDiv" >
+                <h5>Your bank balance will be <span class="numberSpan">22.5 Million US Dollars
+                </span>.</h5>
+              </div>
+            </div>
+            <hr>
+
+
+
+
+
+
+
+
+
+
+
+            {% elif Name == "d" and Gender == "Male" %}
+
+            <div class="row casesRow">
+                <div class="col-6 imageDiv">
+                    <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                </div>
+
+                <div class="col-6 textDiv" >
+                  <h5>Your job will be: <span class="numberSpan">Teacher</span>.</h5>
+                </div>
+              </div>
+              <hr>
+
+
+               <div class="row casesRow">
+                <div class="col-6 imageDiv">
+                    <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                </div>
+
+                <div class="col-6 textDiv" >
+                  <h5>Your salary will be <span class="numberSpan">$2354</span>.</h5>
+                </div>
+              </div>
+              <hr>
+
+
+
+              <div class="row casesRow">
+                <div class="col-6 imageDiv">
+                    <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wife">
+                </div>
+
+                <div class="col-6 textDiv" >
+                  <h5>You will have <span class="numberSpan">2</span> Wives.</h5>
+                </div>
+              </div>
+              <hr>
+
+
+             <div class="row casesRow">
+                <div class="col-6 imageDiv">
+                    <img src="{% static 'images/22_future_indicator/money.png' %}" alt="money">
+                </div>
+
+                <div class="col-6 textDiv" >
+                  <h5>Your bank balance will be <span class="numberSpan">12.5 Million US Dollars</span>.</h5>
+                </div>
+              </div>
+              <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+              {% elif Name == "e" and Gender == "Male" %}
+
+              <div class="row casesRow">
+                  <div class="col-6 imageDiv">
+                      <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                  </div>
+
+                  <div class="col-6 textDiv" >
+                    <h5>Your job will be: <span class="numberSpan">Pilot</span>.</h5>
+                  </div>
+                </div>
+                <hr>
+
+
+                 <div class="row casesRow">
+                  <div class="col-6 imageDiv">
+                      <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                  </div>
+
+                  <div class="col-6 textDiv" >
+                    <h5>Your salary will be <span class="numberSpan">$7999</span>.</h5>
+                  </div>
+                </div>
+                <hr>
+
+
+
+                <div class="row casesRow">
+                  <div class="col-6 imageDiv">
+                      <img src="{% static 'images/22_future_indicator/car.png' %}" alt="cars">
+                  </div>
+
+                  <div class="col-6 textDiv" >
+                    <h5>You will have <span class="numberSpan">2</span> Cars.</h5>
+                  </div>
+                </div>
+                <hr>
+
+
+               <div class="row casesRow">
+                  <div class="col-6 imageDiv">
+                      <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wives">
+                  </div>
+
+                  <div class="col-6 textDiv" >
+                    <h5>You will have <span class="numberSpan">3</span> wives.</h5>
+                  </div>
+                </div>
+                <hr>
+
+
+
+              <div class="row casesRow">
+                  <div class="col-6 imageDiv">
+                      <img src="{% static 'images/22_future_indicator/children.png' %}" alt="Children">
+                  </div>
+
+                  <div class="col-6 textDiv" >
+                    <h5>You will have  <span class="numberSpan">4</span>Childrens.</h5>
+                  </div>
+                </div>
+                <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                {% elif Name == "f" and Gender == "Male" %}
+
+                <div class="row casesRow">
+                    <div class="col-6 imageDiv">
+                        <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                    </div>
+
+                    <div class="col-6 textDiv" >
+                      <h5>Your job will be: <span class="numberSpan">Police</span>.</h5>
+                    </div>
+                  </div>
+                  <hr>
+
+
+                   <div class="row casesRow">
+                    <div class="col-6 imageDiv">
+                        <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                    </div>
+
+                    <div class="col-6 textDiv" >
+                      <h5>Your salary will be <span class="numberSpan">$8647</span>.</h5>
+                    </div>
+                  </div>
+                  <hr>
+
+
+
+                  <div class="row casesRow">
+                    <div class="col-6 imageDiv">
+                        <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                    </div>
+
+                    <div class="col-6 textDiv" >
+                      <h5>You will have <span class="numberSpan">4</span> houses.</h5>
+                    </div>
+                  </div>
+                  <hr>
+
+
+                 <div class="row casesRow">
+                    <div class="col-6 imageDiv">
+                        <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                    </div>
+
+                    <div class="col-6 textDiv" >
+                      <h5>You will have <span class="numberSpan">4</span> Cars.</h5>
+                    </div>
+                  </div>
+                  <hr>
+
+
+
+                <div class="row casesRow">
+                    <div class="col-6 imageDiv">
+                        <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wife">
+                    </div>
+
+                    <div class="col-6 textDiv" >
+                      <h5>You will have <span class="numberSpan">2</span> wives.</h5>
+                    </div>
+                  </div>
+                  <hr>
+
+
+
+
+
+
+
+
+
+
+
+                  {% elif Name == "g" and Gender == "Male" %}
+
+                  <div class="row casesRow">
+                      <div class="col-6 imageDiv">
+                          <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                      </div>
+
+                      <div class="col-6 textDiv" >
+                        <h5>Your job will be: <span class="numberSpan">Judge</span>.</h5>
+                      </div>
+                    </div>
+                    <hr>
+
+
+                     <div class="row casesRow">
+                      <div class="col-6 imageDiv">
+                          <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                      </div>
+
+                      <div class="col-6 textDiv" >
+                        <h5>Your salary will be <span class="numberSpan">$5675</span>.</h5>
+                      </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="row casesRow">
+                      <div class="col-6 imageDiv">
+                          <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                      </div>
+
+                      <div class="col-6 textDiv" >
+                        <h5>You will have <span class="numberSpan">1</span> house.</h5>
+                      </div>
+                    </div>
+                    <hr>
+
+
+                   <div class="row casesRow">
+                      <div class="col-6 imageDiv">
+                          <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                      </div>
+
+                      <div class="col-6 textDiv" >
+                        <h5>You will have <span class="numberSpan">1</span> Car.</h5>
+                      </div>
+                    </div>
+                    <hr>
+
+
+
+                  <div class="row casesRow">
+                      <div class="col-6 imageDiv">
+                          <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                      </div>
+
+                      <div class="col-6 textDiv" >
+                        <h5>Your bank balance will be <span class="numberSpan">2 Million US Dollars</span> .</h5>
+                      </div>
+                    </div>
+                    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    {% elif Name == "h" and Gender == "Male" %}
+
+                    <div class="row casesRow">
+                        <div class="col-6 imageDiv">
+                            <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wife">
+                        </div>
+
+                        <div class="col-6 textDiv" >
+                          <h5>You will have: <span class="numberSpan">
+                            1 wife</span>.</h5>
+                        </div>
+                      </div>
+                      <hr>
+
+
+                       <div class="row casesRow">
+                        <div class="col-6 imageDiv">
+                            <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                        </div>
+
+                        <div class="col-6 textDiv" >
+                          <h5>Your salary will be <span class="numberSpan"> $1124</span>.</h5>
+                        </div>
+                      </div>
+                      <hr>
+
+
+
+                      <div class="row casesRow">
+                        <div class="col-6 imageDiv">
+                            <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                        </div>
+
+                        <div class="col-6 textDiv" >
+                          <h5>You will have <span class="numberSpan">2</span> houses.</h5>
+                        </div>
+                      </div>
+                      <hr>
+
+
+                     <div class="row casesRow">
+                        <div class="col-6 imageDiv">
+                            <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                        </div>
+
+                        <div class="col-6 textDiv" >
+                          <h5>You will have <span class="numberSpan">4</span> Cars.</h5>
+                        </div>
+                      </div>
+                      <hr>
+
+
+
+                    <div class="row casesRow">
+                        <div class="col-6 imageDiv">
+                            <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                        </div>
+
+                        <div class="col-6 textDiv" >
+                          <h5>Your bank balance will be <span class="numberSpan">33.5 Million US Dollars</span>.</h5>
+                        </div>
+                      </div>
+                      <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      {% elif Name == "i" and Gender == "Male" %}
+
+                      <div class="row casesRow">
+                          <div class="col-6 imageDiv">
+                              <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                          </div>
+
+                          <div class="col-6 textDiv" >
+                            <h5>Your job will be: <span class="numberSpan">CEO of Company</span>.</h5>
+                          </div>
+                        </div>
+                        <hr>
+
+
+                         <div class="row casesRow">
+                          <div class="col-6 imageDiv">
+                              <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wife">
+                          </div>
+
+                          <div class="col-6 textDiv" >
+                            <h5>You will have <span class="numberSpan">1 wife</span>.</h5>
+                          </div>
+                        </div>
+                        <hr>
+
+
+
+                        <div class="row casesRow">
+                          <div class="col-6 imageDiv">
+                              <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                          </div>
+
+                          <div class="col-6 textDiv" >
+                            <h5>You will have <span class="numberSpan">4</span> houses.</h5>
+                          </div>
+                        </div>
+                        <hr>
+
+
+                       <div class="row casesRow">
+                          <div class="col-6 imageDiv">
+                              <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                          </div>
+
+                          <div class="col-6 textDiv" >
+                            <h5>You will have <span class="numberSpan">2</span> Cars.</h5>
+                          </div>
+                        </div>
+                        <hr>
+
+
+
+                      <div class="row casesRow">
+                          <div class="col-6 imageDiv">
+                              <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                          </div>
+
+                          <div class="col-6 textDiv" >
+                            <h5>Your bank balance will be <span class="numberSpan">2.7 Million US Dollars</span> .</h5>
+                          </div>
+                        </div>
+                        <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        {% elif Name == "j" and Gender == "Male" %}
+
+                        <div class="row casesRow">
+                            <div class="col-6 imageDiv">
+                                <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                            </div>
+
+                            <div class="col-6 textDiv" >
+                              <h5>Your job will be: <span class="numberSpan">Astronomer</span>.</h5>
+                            </div>
+                          </div>
+                          <hr>
+
+
+                           <div class="row casesRow">
+                            <div class="col-6 imageDiv">
+                                <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                            </div>
+
+                            <div class="col-6 textDiv" >
+                              <h5>Your salary will be <span class="numberSpan">$4577</span>.</h5>
+                            </div>
+                          </div>
+                          <hr>
+
+
+
+                          <div class="row casesRow">
+                            <div class="col-6 imageDiv">
+                                <img src="{% static 'images/22_future_indicator/children.png' %}" alt="children">
+                            </div>
+
+                            <div class="col-6 textDiv" >
+                              <h5>You will have <span class="numberSpan">6 Childrens</span>.</h5>
+                            </div>
+                          </div>
+                          <hr>
+
+
+                         <div class="row casesRow">
+                            <div class="col-6 imageDiv">
+                                <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                            </div>
+
+                            <div class="col-6 textDiv" >
+                              <h5>You will have <span class="numberSpan">5</span> Cars.</h5>
+                            </div>
+                          </div>
+                          <hr>
+
+
+
+                        <div class="row casesRow">
+                            <div class="col-6 imageDiv">
+                                <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wife">
+                            </div>
+
+                            <div class="col-6 textDiv" >
+                              <h5>You will have <span class="numberSpan">1 wife</span>.</h5>
+                            </div>
+                          </div>
+                          <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          {% elif Name == "k" and Gender == "Male" %}
+
+                          <div class="row casesRow">
+                              <div class="col-6 imageDiv">
+                                  <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                              </div>
+
+                              <div class="col-6 textDiv" >
+                                <h5>Your job will be: <span class="numberSpan">Hair cutter</span>.</h5>
+                              </div>
+                            </div>
+                            <hr>
+
+
+                             <div class="row casesRow">
+                              <div class="col-6 imageDiv">
+                                  <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                              </div>
+
+                              <div class="col-6 textDiv" >
+                                <h5>Your salary will be <span class="numberSpan">$6745</span>.</h5>
+                              </div>
+                            </div>
+                            <hr>
+
+
+
+                            <div class="row casesRow">
+                              <div class="col-6 imageDiv">
+                                  <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                              </div>
+
+                              <div class="col-6 textDiv" >
+                                <h5>You will have <span class="numberSpan">5</span> houses.</h5>
+                              </div>
+                            </div>
+                            <hr>
+
+
+                           <div class="row casesRow">
+                              <div class="col-6 imageDiv">
+                                  <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                              </div>
+
+                              <div class="col-6 textDiv" >
+                                <h5>You will have <span class="numberSpan">3</span> Cars.</h5>
+                              </div>
+                            </div>
+                            <hr>
+
+
+
+                          <div class="row casesRow">
+                              <div class="col-6 imageDiv">
+                                  <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="Wives">
+                              </div>
+
+                              <div class="col-6 textDiv" >
+                                <h5>You will have <span class="numberSpan">3</span> wives.</h5>
+                              </div>
+                            </div>
+                            <hr>
+
+
+
+
+
+
+
+
+
+
+
+                            {% elif Name == "l" and Gender == "Male" %}
+
+                            <div class="row casesRow">
+                                <div class="col-6 imageDiv">
+                                    <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                </div>
+
+                                <div class="col-6 textDiv" >
+                                  <h5>Your job will be: <span class="numberSpan">Book Seller</span>.</h5>
+                                </div>
+                              </div>
+                              <hr>
+
+
+                               <div class="row casesRow">
+                                <div class="col-6 imageDiv">
+                                    <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wives">
+                                </div>
+
+                                <div class="col-6 textDiv" >
+                                  <h5>You will have  <span class="numberSpan">2 Wives</span>.</h5>
+                                </div>
+                              </div>
+                              <hr>
+
+
+
+                              <div class="row casesRow">
+                                <div class="col-6 imageDiv">
+                                    <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                </div>
+
+                                <div class="col-6 textDiv" >
+                                  <h5>You will have <span class="numberSpan">6</span> houses.</h5>
+                                </div>
+                              </div>
+                              <hr>
+
+
+                             <div class="row casesRow">
+                                <div class="col-6 imageDiv">
+                                    <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                </div>
+
+                                <div class="col-6 textDiv" >
+                                  <h5>You will have <span class="numberSpan">4</span> Cars.</h5>
+                                </div>
+                              </div>
+                              <hr>
+
+
+
+                            <div class="row casesRow">
+                                <div class="col-6 imageDiv">
+                                    <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                </div>
+
+                                <div class="col-6 textDiv" >
+                                  <h5>Your bank balance will be <span class="numberSpan">27.15 Million US Dollars</span>.</h5>
+                                </div>
+                              </div>
+                              <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              {% elif Name == "m" and Gender == "Male" %}
+
+                              <div class="row casesRow">
+                                  <div class="col-6 imageDiv">
+                                      <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                  </div>
+
+                                  <div class="col-6 textDiv" >
+                                    <h5>Your job will be: <span class="numberSpan">Cooker</span>.</h5>
+                                  </div>
+                                </div>
+                                <hr>
+
+
+                                 <div class="row casesRow">
+                                  <div class="col-6 imageDiv">
+                                      <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                  </div>
+
+                                  <div class="col-6 textDiv" >
+                                    <h5>Your salary will be <span class="numberSpan"> $2580</span>.</h5>
+                                  </div>
+                                </div>
+                                <hr>
+
+
+
+                                <div class="row casesRow">
+                                  <div class="col-6 imageDiv">
+                                      <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wives">
+                                  </div>
+
+                                  <div class="col-6 textDiv" >
+                                    <h5>You will have <span class="numberSpan">2 Wives</span>.</h5>
+                                  </div>
+                                </div>
+                                <hr>
+
+
+                               <div class="row casesRow">
+                                  <div class="col-6 imageDiv">
+                                      <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                  </div>
+
+                                  <div class="col-6 textDiv" >
+                                    <h5>You will have <span class="numberSpan">7</span> Cars.</h5>
+                                  </div>
+                                </div>
+                                <hr>
+
+
+
+                              <div class="row casesRow">
+                                  <div class="col-6 imageDiv">
+                                      <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                  </div>
+
+                                  <div class="col-6 textDiv" >
+                                    <h5>Your bank balance will be <span class="numberSpan">247.15 Million US Dollars</span>.</h5>
+                                  </div>
+                                </div>
+                                <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                {% elif Name == "n" and Gender == "Male" %}
+
+                                <div class="row casesRow">
+                                    <div class="col-6 imageDiv">
+                                        <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                    </div>
+
+                                    <div class="col-6 textDiv" >
+                                      <h5>Your job will be: <span class="numberSpan">Professor</span>.</h5>
+                                    </div>
+                                  </div>
+                                  <hr>
+
+
+                                   <div class="row casesRow">
+                                    <div class="col-6 imageDiv">
+                                        <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                    </div>
+
+                                    <div class="col-6 textDiv" >
+                                      <h5>Your salary will be <span class="numberSpan">$4570</span>.</h5>
+                                    </div>
+                                  </div>
+                                  <hr>
+
+
+
+                                  <div class="row casesRow">
+                                    <div class="col-6 imageDiv">
+                                        <img src="{% static 'images/22_future_indicator/children.png' %}" alt="children">
+                                    </div>
+
+                                    <div class="col-6 textDiv" >
+                                      <h5>You will have <span class="numberSpan">1 children</span>.</h5>
+                                    </div>
+                                  </div>
+                                  <hr>
+
+
+                                 <div class="row casesRow">
+                                    <div class="col-6 imageDiv">
+                                        <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                    </div>
+
+                                    <div class="col-6 textDiv" >
+                                      <h5>You will have <span class="numberSpan">9</span> Cars.</h5>
+                                    </div>
+                                  </div>
+                                  <hr>
+
+
+
+                                <div class="row casesRow">
+                                    <div class="col-6 imageDiv">
+                                        <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wives">
+                                    </div>
+
+                                    <div class="col-6 textDiv" >
+                                      <h5>You will have <span class="numberSpan">3</span> wives.</h5>
+                                    </div>
+                                  </div>
+                                  <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  {% elif Name == "o" and Gender == "Male" %}
+
+                                  <div class="row casesRow">
+                                      <div class="col-6 imageDiv">
+                                          <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                      </div>
+
+                                      <div class="col-6 textDiv" >
+                                        <h5>Your job will be: <span class="numberSpan">Software Engineer</span>.</h5>
+                                      </div>
+                                    </div>
+                                    <hr>
+
+
+                                     <div class="row casesRow">
+                                      <div class="col-6 imageDiv">
+                                          <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                      </div>
+
+                                      <div class="col-6 textDiv" >
+                                        <h5>Your salary will be <span class="numberSpan">$3080</span>.</h5>
+                                      </div>
+                                    </div>
+                                    <hr>
+
+
+
+                                    <div class="row casesRow">
+                                      <div class="col-6 imageDiv">
+                                          <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                      </div>
+
+                                      <div class="col-6 textDiv" >
+                                        <h5>You will have <span class="numberSpan">3</span> houses.</h5>
+                                      </div>
+                                    </div>
+                                    <hr>
+
+
+                                   <div class="row casesRow">
+                                      <div class="col-6 imageDiv">
+                                          <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                      </div>
+
+                                      <div class="col-6 textDiv" >
+                                        <h5>You will have <span class="numberSpan">7</span> Cars.</h5>
+                                      </div>
+                                    </div>
+                                    <hr>
+
+
+
+                                  <div class="row casesRow">
+                                      <div class="col-6 imageDiv">
+                                          <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                      </div>
+
+                                      <div class="col-6 textDiv" >
+                                        <h5>Your bank balance will be <span class="numberSpan">475.05 Million US Dollars</span>.</h5>
+                                      </div>
+                                    </div>
+                                    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    {% elif Name == "p" and Gender == "Male" %}
+
+                                    <div class="row casesRow">
+                                        <div class="col-6 imageDiv">
+                                            <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                        </div>
+
+                                        <div class="col-6 textDiv" >
+                                          <h5>Your job will be: <span class="numberSpan">Surgeon</span>.</h5>
+                                        </div>
+                                      </div>
+                                      <hr>
+
+
+                                       <div class="row casesRow">
+                                        <div class="col-6 imageDiv">
+                                            <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                        </div>
+
+                                        <div class="col-6 textDiv" >
+                                          <h5>Your salary will be <span class="numberSpan">$4780</span>.</h5>
+                                        </div>
+                                      </div>
+                                      <hr>
+
+
+
+                                      <div class="row casesRow">
+                                        <div class="col-6 imageDiv">
+                                            <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                        </div>
+
+                                        <div class="col-6 textDiv" >
+                                          <h5>You will have <span class="numberSpan">4</span> houses.</h5>
+                                        </div>
+                                      </div>
+                                      <hr>
+
+
+                                     <div class="row casesRow">
+                                        <div class="col-6 imageDiv">
+                                            <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wife">
+                                        </div>
+
+                                        <div class="col-6 textDiv" >
+                                          <h5>You will have <span class="numberSpan">1</span>wife.</h5>
+                                        </div>
+                                      </div>
+                                      <hr>
+
+
+
+                                    <div class="row casesRow">
+                                        <div class="col-6 imageDiv">
+                                            <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                        </div>
+
+                                        <div class="col-6 textDiv" >
+                                          <h5>Your bank balance will be <span class="numberSpan">784.5 Million US Dollars</span>.</h5>
+                                        </div>
+                                      </div>
+                                      <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      {% elif Name == "q" and Gender == "Male" %}
+
+                                      <div class="row casesRow">
+                                          <div class="col-6 imageDiv">
+                                              <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                          </div>
+
+                                          <div class="col-6 textDiv" >
+                                            <h5>Your job will be: <span class="numberSpan">Car Dealer</span>.</h5>
+                                          </div>
+                                        </div>
+                                        <hr>
+
+
+                                         <div class="row casesRow">
+                                          <div class="col-6 imageDiv">
+                                              <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                          </div>
+
+                                          <div class="col-6 textDiv" >
+                                            <h5>Your salary will be <span class="numberSpan">$3201</span>.</h5>
+                                          </div>
+                                        </div>
+                                        <hr>
+
+
+
+                                        <div class="row casesRow">
+                                          <div class="col-6 imageDiv">
+                                              <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                          </div>
+
+                                          <div class="col-6 textDiv" >
+                                            <h5>You will have <span class="numberSpan">7</span> houses.</h5>
+                                          </div>
+                                        </div>
+                                        <hr>
+
+
+                                       <div class="row casesRow">
+                                          <div class="col-6 imageDiv">
+                                              <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                          </div>
+
+                                          <div class="col-6 textDiv" >
+                                            <h5>You will have <span class="numberSpan">1</span> Car.</h5>
+                                          </div>
+                                        </div>
+                                        <hr>
+
+
+
+                                      <div class="row casesRow">
+                                          <div class="col-6 imageDiv">
+                                              <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wives">
+                                          </div>
+
+                                          <div class="col-6 textDiv" >
+                                            <h5>You will have <span class="numberSpan">3</span> wives.</h5>
+                                          </div>
+                                        </div>
+                                        <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        {% elif Name == "r" and Gender == "Male" %}
+
+                                        <div class="row casesRow">
+                                            <div class="col-6 imageDiv">
+                                                <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                            </div>
+
+                                            <div class="col-6 textDiv" >
+                                              <h5>Your job will be: <span class="numberSpan">Cashier</span>.</h5>
+                                            </div>
+                                          </div>
+                                          <hr>
+
+
+                                           <div class="row casesRow">
+                                            <div class="col-6 imageDiv">
+                                                <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wives">
+                                            </div>
+
+                                            <div class="col-6 textDiv" >
+                                              <h5>You will have <span class="numberSpan">2 Wives</span>.</h5>
+                                            </div>
+                                          </div>
+                                          <hr>
+
+
+
+                                          <div class="row casesRow">
+                                            <div class="col-6 imageDiv">
+                                                <img src="{% static 'images/22_future_indicator/children.png' %}" alt="children">
+                                            </div>
+
+                                            <div class="col-6 textDiv" >
+                                              <h5>You will have <span class="numberSpan">2 Childrens</span> .</h5>
+                                            </div>
+                                          </div>
+                                          <hr>
+
+
+                                         <div class="row casesRow">
+                                            <div class="col-6 imageDiv">
+                                                <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                            </div>
+
+                                            <div class="col-6 textDiv" >
+                                              <h5>You will have <span class="numberSpan">6</span> Cars.</h5>
+                                            </div>
+                                          </div>
+                                          <hr>
+
+
+
+                                        <div class="row casesRow">
+                                            <div class="col-6 imageDiv">
+                                                <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                            </div>
+
+                                            <div class="col-6 textDiv" >
+                                              <h5>Your bank balance will be <span class="numberSpan">99.6 Million US Dollars
+                                              </span>.</h5>
+                                            </div>
+                                          </div>
+                                          <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                          {% elif Name == "s" and Gender == "Male" %}
+
+                                          <div class="row casesRow">
+                                              <div class="col-6 imageDiv">
+                                                  <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                              </div>
+
+                                              <div class="col-6 textDiv" >
+                                                <h5>Your job will be: <span class="numberSpan">Mechanic</span>.</h5>
+                                              </div>
+                                            </div>
+                                            <hr>
+
+
+                                             <div class="row casesRow">
+                                              <div class="col-6 imageDiv">
+                                                  <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                              </div>
+
+                                              <div class="col-6 textDiv" >
+                                                <h5>Your salary will be <span class="numberSpan">$7830</span>.</h5>
+                                              </div>
+                                            </div>
+                                            <hr>
+
+
+
+                                            <div class="row casesRow">
+                                              <div class="col-6 imageDiv">
+                                                  <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                              </div>
+
+                                              <div class="col-6 textDiv" >
+                                                <h5>You will have <span class="numberSpan">1</span> house.</h5>
+                                              </div>
+                                            </div>
+                                            <hr>
+
+
+                                           <div class="row casesRow">
+                                              <div class="col-6 imageDiv">
+                                                  <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                              </div>
+
+                                              <div class="col-6 textDiv" >
+                                                <h5>You will have <span class="numberSpan">4</span> Cars.</h5>
+                                              </div>
+                                            </div>
+                                            <hr>
+
+
+
+                                          <div class="row casesRow">
+                                              <div class="col-6 imageDiv">
+                                                  <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wives">
+                                              </div>
+
+                                              <div class="col-6 textDiv" >
+                                                <h5>You will have  <span class="numberSpan">3</span> wives.</h5>
+                                              </div>
+                                            </div>
+                                            <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            {% elif Name == "t" and Gender == "Male" %}
+
+                                            <div class="row casesRow">
+                                                <div class="col-6 imageDiv">
+                                                    <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                                </div>
+
+                                                <div class="col-6 textDiv" >
+                                                  <h5>Your job will be: <span class="numberSpan">Producer</span>.</h5>
+                                                </div>
+                                              </div>
+                                              <hr>
+
+
+                                               <div class="row casesRow">
+                                                <div class="col-6 imageDiv">
+                                                    <img src="{% static 'images/22_future_indicator/children.png' %}" alt="children">
+                                                </div>
+
+                                                <div class="col-6 textDiv" >
+                                                  <h5>You will have  <span class="numberSpan">8 Childrens</span>.</h5>
+                                                </div>
+                                              </div>
+                                              <hr>
+
+
+
+                                              <div class="row casesRow">
+                                                <div class="col-6 imageDiv">
+                                                    <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                                </div>
+
+                                                <div class="col-6 textDiv" >
+                                                  <h5>You will have <span class="numberSpan">4</span> houses.</h5>
+                                                </div>
+                                              </div>
+                                              <hr>
+
+
+                                             <div class="row casesRow">
+                                                <div class="col-6 imageDiv">
+                                                    <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                                </div>
+
+                                                <div class="col-6 textDiv" >
+                                                  <h5>You will have <span class="numberSpan">1</span> Car.</h5>
+                                                </div>
+                                              </div>
+                                              <hr>
+
+
+
+                                            <div class="row casesRow">
+                                                <div class="col-6 imageDiv">
+                                                    <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="Wife">
+                                                </div>
+
+                                                <div class="col-6 textDiv" >
+                                                  <h5>You will have <span class="numberSpan">1</span> wife.</h5>
+                                                </div>
+                                              </div>
+                                              <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                              {% elif Name == "u" and Gender == "Male" %}
+
+                                              <div class="row casesRow">
+                                                  <div class="col-6 imageDiv">
+                                                      <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                                  </div>
+
+                                                  <div class="col-6 textDiv" >
+                                                    <h5>Your job will be: <span class="numberSpan">Motivational Speaker</span>.</h5>
+                                                  </div>
+                                                </div>
+                                                <hr>
+
+
+                                                 <div class="row casesRow">
+                                                  <div class="col-6 imageDiv">
+                                                      <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                                  </div>
+
+                                                  <div class="col-6 textDiv" >
+                                                    <h5>Your salary will be <span class="numberSpan">$7860</span>.</h5>
+                                                  </div>
+                                                </div>
+                                                <hr>
+
+
+
+                                                <div class="row casesRow">
+                                                  <div class="col-6 imageDiv">
+                                                      <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                                  </div>
+
+                                                  <div class="col-6 textDiv" >
+                                                    <h5>You will have <span class="numberSpan">3</span> houses.</h5>
+                                                  </div>
+                                                </div>
+                                                <hr>
+
+
+                                               <div class="row casesRow">
+                                                  <div class="col-6 imageDiv">
+                                                      <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wives">
+                                                  </div>
+
+                                                  <div class="col-6 textDiv" >
+                                                    <h5>You will have <span class="numberSpan">2 Wives</span>.</h5>
+                                                  </div>
+                                                </div>
+                                                <hr>
+
+
+
+                                              <div class="row casesRow">
+                                                  <div class="col-6 imageDiv">
+                                                      <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                                  </div>
+
+                                                  <div class="col-6 textDiv" >
+                                                    <h5>Your bank balance will be <span class="numberSpan">4.22 Million US Dollars</span> .</h5>
+                                                  </div>
+                                                </div>
+                                                <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                {% elif Name == "v" and Gender == "Male" %}
+
+                                                <div class="row casesRow">
+                                                    <div class="col-6 imageDiv">
+                                                        <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                                    </div>
+
+                                                    <div class="col-6 textDiv" >
+                                                      <h5>Your job will be: <span class="numberSpan">Cooker</span>.</h5>
+                                                    </div>
+                                                  </div>
+                                                  <hr>
+
+
+                                                   <div class="row casesRow">
+                                                    <div class="col-6 imageDiv">
+                                                        <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                                    </div>
+
+                                                    <div class="col-6 textDiv" >
+                                                      <h5>Your salary will be <span class="numberSpan">$6560</span>.</h5>
+                                                    </div>
+                                                  </div>
+                                                  <hr>
+
+
+
+                                                  <div class="row casesRow">
+                                                    <div class="col-6 imageDiv">
+                                                        <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wives">
+                                                    </div>
+
+                                                    <div class="col-6 textDiv" >
+                                                      <h5>You will have <span class="numberSpan">3 Wives</span>.</h5>
+                                                    </div>
+                                                  </div>
+                                                  <hr>
+
+
+                                                 <div class="row casesRow">
+                                                    <div class="col-6 imageDiv">
+                                                        <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                                    </div>
+
+                                                    <div class="col-6 textDiv" >
+                                                      <h5>You will have <span class="numberSpan">4</span> Cars.</h5>
+                                                    </div>
+                                                  </div>
+                                                  <hr>
+
+
+
+                                                <div class="row casesRow">
+                                                    <div class="col-6 imageDiv">
+                                                        <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                                    </div>
+
+                                                    <div class="col-6 textDiv" >
+                                                      <h5>Your bank balance will be <span class="numberSpan">12.15 Million US Dollars</span> .</h5>
+                                                    </div>
+                                                  </div>
+                                                  <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  {% elif Name == "w" and Gender == "Male" %}
+
+                                                  <div class="row casesRow">
+                                                      <div class="col-6 imageDiv">
+                                                          <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                                      </div>
+
+                                                      <div class="col-6 textDiv" >
+                                                        <h5>Your job will be: <span class="numberSpan">Social Activist</span>.</h5>
+                                                      </div>
+                                                    </div>
+                                                    <hr>
+
+
+                                                     <div class="row casesRow">
+                                                      <div class="col-6 imageDiv">
+                                                          <img src="{% static 'images/22_future_indicator/children.png' %}" alt="children">
+                                                      </div>
+
+                                                      <div class="col-6 textDiv" >
+                                                        <h5>You will have  <span class="numberSpan">4 Childrens</span>.</h5>
+                                                      </div>
+                                                    </div>
+                                                    <hr>
+
+
+
+                                                    <div class="row casesRow">
+                                                      <div class="col-6 imageDiv">
+                                                          <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                                      </div>
+
+                                                      <div class="col-6 textDiv" >
+                                                        <h5>You will have <span class="numberSpan">2</span> houses.</h5>
+                                                      </div>
+                                                    </div>
+                                                    <hr>
+
+
+                                                   <div class="row casesRow">
+                                                      <div class="col-6 imageDiv">
+                                                          <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wives">
+                                                      </div>
+
+                                                      <div class="col-6 textDiv" >
+                                                        <h5>You will have <span class="numberSpan">3 Wives</span>.</h5>
+                                                      </div>
+                                                    </div>
+                                                    <hr>
+
+
+
+                                                  <div class="row casesRow">
+                                                      <div class="col-6 imageDiv">
+                                                          <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                                      </div>
+
+                                                      <div class="col-6 textDiv" >
+                                                        <h5>Your bank balance will be <span class="numberSpan">12.5 Million US Dollars</span> .</h5>
+                                                      </div>
+                                                    </div>
+                                                    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    {% elif Name == "x" and Gender == "Male" %}
+
+                                                    <div class="row casesRow">
+                                                        <div class="col-6 imageDiv">
+                                                            <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                                        </div>
+
+                                                        <div class="col-6 textDiv" >
+                                                          <h5>Your job will be: <span class="numberSpan">Baker</span>.</h5>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+
+
+                                                       <div class="row casesRow">
+                                                        <div class="col-6 imageDiv">
+                                                            <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                                        </div>
+
+                                                        <div class="col-6 textDiv" >
+                                                          <h5>Your salary will be <span class="numberSpan">$5560</span>.</h5>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+
+
+
+                                                      <div class="row casesRow">
+                                                        <div class="col-6 imageDiv">
+                                                            <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                                        </div>
+
+                                                        <div class="col-6 textDiv" >
+                                                          <h5>You will have <span class="numberSpan">8</span> houses.</h5>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+
+
+                                                     <div class="row casesRow">
+                                                        <div class="col-6 imageDiv">
+                                                            <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wives">
+                                                        </div>
+
+                                                        <div class="col-6 textDiv" >
+                                                          <h5>You will have <span class="numberSpan">3 Wives</span>.</h5>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+
+
+
+                                                    <div class="row casesRow">
+                                                        <div class="col-6 imageDiv">
+                                                            <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                                        </div>
+
+                                                        <div class="col-6 textDiv" >
+                                                          <h5>Your bank balance will be <span class="numberSpan">88.5 Million US Dollars</span>.</h5>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                      {% elif Name == "y" and Gender == "Male" %}
+
+                                                      <div class="row casesRow">
+                                                          <div class="col-6 imageDiv">
+                                                              <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                                          </div>
+
+                                                          <div class="col-6 textDiv" >
+                                                            <h5>Your job will be: <span class="numberSpan">Shopkeeper</span>.</h5>
+                                                          </div>
+                                                        </div>
+                                                        <hr>
+
+
+                                                         <div class="row casesRow">
+                                                          <div class="col-6 imageDiv">
+                                                              <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                                          </div>
+
+                                                          <div class="col-6 textDiv" >
+                                                            <h5>Your salary will be <span class="numberSpan">$4880</span>.</h5>
+                                                          </div>
+                                                        </div>
+                                                        <hr>
+
+
+
+                                                        <div class="row casesRow">
+                                                          <div class="col-6 imageDiv">
+                                                              <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                                          </div>
+
+                                                          <div class="col-6 textDiv" >
+                                                            <h5>You will have <span class="numberSpan">6</span> houses.</h5>
+                                                          </div>
+                                                        </div>
+                                                        <hr>
+
+
+                                                       <div class="row casesRow">
+                                                          <div class="col-6 imageDiv">
+                                                              <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                                          </div>
+
+                                                          <div class="col-6 textDiv" >
+                                                            <h5>You will have <span class="numberSpan">1</span> Car.</h5>
+                                                          </div>
+                                                        </div>
+                                                        <hr>
+
+
+
+                                                      <div class="row casesRow">
+                                                          <div class="col-6 imageDiv">
+                                                              <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wives">
+                                                          </div>
+
+                                                          <div class="col-6 textDiv" >
+                                                            <h5>You will have<span class="numberSpan">2</span> wives.</h5>
+                                                          </div>
+                                                        </div>
+                                                        <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                         {% elif Name == "z" and Gender == "Male" %}
+
+                                                        <div class="row casesRow">
+                                                            <div class="col-6 imageDiv">
+                                                                <img src="{% static 'images/22_future_indicator/wife.jpeg' %}" alt="wives">
+                                                            </div>
+
+                                                            <div class="col-6 textDiv" >
+                                                              <h5>You will have : <span class="numberSpan">3 Wives</span>.</h5>
+                                                            </div>
+                                                          </div>
+                                                          <hr>
+
+
+                                                           <div class="row casesRow">
+                                                            <div class="col-6 imageDiv">
+                                                                <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                                            </div>
+
+                                                            <div class="col-6 textDiv" >
+                                                              <h5>Your salary will be <span class="numberSpan">$4179</span>.</h5>
+                                                            </div>
+                                                          </div>
+                                                          <hr>
+
+
+
+                                                          <div class="row casesRow">
+                                                            <div class="col-6 imageDiv">
+                                                                <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                                            </div>
+
+                                                            <div class="col-6 textDiv" >
+                                                              <h5>You will have <span class="numberSpan">5</span> houses.</h5>
+                                                            </div>
+                                                          </div>
+                                                          <hr>
+
+
+                                                         <div class="row casesRow">
+                                                            <div class="col-6 imageDiv">
+                                                                <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                                            </div>
+
+                                                            <div class="col-6 textDiv" >
+                                                              <h5>You will have <span class="numberSpan">6</span> Cars.</h5>
+                                                            </div>
+                                                          </div>
+                                                          <hr>
+
+
+
+                                                        <div class="row casesRow">
+                                                            <div class="col-6 imageDiv">
+                                                                <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                                            </div>
+
+                                                            <div class="col-6 textDiv" >
+                                                              <h5>Your bank balance will be <span class="numberSpan">69.5 Million US Dollars</span> .</h5>
+                                                            </div>
+                                                          </div>
+                                                          <hr>
+
+
+
+
+
+        <!-- Female cases start -->
+
+
+        {% elif Name == "a" and Gender == "Female" %}
+
+        <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>Your job will be: <span class="numberSpan">Civil Engineer</span>.</h5>
+            </div>
+          </div>
+          <hr>
+
+           <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>Your salary will be <span class="numberSpan">$4660</span>.</h5>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>You will have <span class="numberSpan">5</span> houses.</h5>
+            </div>
+          </div>
+          <hr>
+
+
+         <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/children.png' %}" alt="Childrens">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>You will have <span class="numberSpan">2</span> Childrens.</h5>
+            </div>
+          </div>
+          <hr>
+
+        <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>Your bank balance will be <span class="numberSpan">1.5 Million US Dollars</span>.</h5>
+            </div>
+          </div>
+          <hr>
+
+
+
+
+    {% elif Name == "b" and Gender == "Female" %}
+
+        <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>Your job will be: <span class="numberSpan">Doctor</span>.</h5>
+            </div>
+          </div>
+          <hr>
+
+
+           <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>Your salary will be <span class="numberSpan">$7997</span>.</h5>
+            </div>
+          </div>
+          <hr>
+
+
+
+          <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>You will have <span class="numberSpan">1</span> house.</h5>
+            </div>
+          </div>
+          <hr>
+
+
+         <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>You will have <span class="numberSpan">2</span> Cars.</h5>
+            </div>
+          </div>
+          <hr>
+
+
+
+        <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/22_future_indicator/children.png' %}" alt="Bank Balance">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>Your bank balance will be <span class="numberSpan">2</span> wives.</h5>
+            </div>
+          </div>
+          <hr>
+
+
+
+
+
+
+
+          {% elif Name == "c" and Gender == "Female" %}
+
+          <div class="row casesRow">
+              <div class="col-6 imageDiv">
+                  <img src="{% static 'images/22_future_indicator/car.png' %}" alt="car">
+              </div>
+
+              <div class="col-6 textDiv" >
+                <h5>You will have: <span class="numberSpan">2 cars</span>.</h5>
+              </div>
+            </div>
+            <hr>
+
+
+             <div class="row casesRow">
+              <div class="col-6 imageDiv">
+                  <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+              </div>
+
+              <div class="col-6 textDiv" >
+                <h5>Your salary will be:<span class="numberSpan">$9644</span>.</h5>
+              </div>
+            </div>
+            <hr>
+
+
+
+            <div class="row casesRow">
+              <div class="col-6 imageDiv">
+                  <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+              </div>
+
+              <div class="col-6 textDiv" >
+                <h5>You will have <span class="numberSpan">3</span> houses.</h5>
+              </div>
+            </div>
+            <hr>
+
+
+           <div class="row casesRow">
+              <div class="col-6 imageDiv">
+                  <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+              </div>
+
+              <div class="col-6 textDiv" >
+                <h5>You will have <span class="numberSpan">1</span> husband.</h5>
+              </div>
+            </div>
+            <hr>
+
+
+
+          <div class="row casesRow">
+              <div class="col-6 imageDiv">
+                  <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+              </div>
+
+              <div class="col-6 textDiv" >
+                <h5>Your bank balance will be <span class="numberSpan">22.5 Million US Dollars
+                </span>.</h5>
+              </div>
+            </div>
+            <hr>
+
+
+
+
+
+
+
+
+
+
+
+            {% elif Name == "d" and Gender == "Female" %}
+
+            <div class="row casesRow">
+                <div class="col-6 imageDiv">
+                    <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                </div>
+
+                <div class="col-6 textDiv" >
+                  <h5>Your job will be: <span class="numberSpan">Teacher</span>.</h5>
+                </div>
+              </div>
+              <hr>
+
+
+               <div class="row casesRow">
+                <div class="col-6 imageDiv">
+                    <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                </div>
+
+                <div class="col-6 textDiv" >
+                  <h5>Your salary will be <span class="numberSpan">$2354</span>.</h5>
+                </div>
+              </div>
+              <hr>
+
+
+
+              <div class="row casesRow">
+                <div class="col-6 imageDiv">
+                    <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                </div>
+
+                <div class="col-6 textDiv" >
+                  <h5>You will have <span class="numberSpan">1</span> husband.</h5>
+                </div>
+              </div>
+              <hr>
+
+
+             <div class="row casesRow">
+                <div class="col-6 imageDiv">
+                    <img src="{% static 'images/22_future_indicator/money.png' %}" alt="money">
+                </div>
+
+                <div class="col-6 textDiv" >
+                  <h5>Your bank balance will be <span class="numberSpan">12.5 Million US Dollars</span>.</h5>
+                </div>
+              </div>
+              <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+              {% elif Name == "e" and Gender == "Female" %}
+
+              <div class="row casesRow">
+                  <div class="col-6 imageDiv">
+                      <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                  </div>
+
+                  <div class="col-6 textDiv" >
+                    <h5>Your job will be: <span class="numberSpan">Pilot</span>.</h5>
+                  </div>
+                </div>
+                <hr>
+
+
+                 <div class="row casesRow">
+                  <div class="col-6 imageDiv">
+                      <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                  </div>
+
+                  <div class="col-6 textDiv" >
+                    <h5>Your salary will be <span class="numberSpan">$7999</span>.</h5>
+                  </div>
+                </div>
+                <hr>
+
+
+
+                <div class="row casesRow">
+                  <div class="col-6 imageDiv">
+                      <img src="{% static 'images/22_future_indicator/car.png' %}" alt="cars">
+                  </div>
+
+                  <div class="col-6 textDiv" >
+                    <h5>You will have <span class="numberSpan">2</span> Cars.</h5>
+                  </div>
+                </div>
+                <hr>
+
+
+               <div class="row casesRow">
+                  <div class="col-6 imageDiv">
+                      <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                  </div>
+
+                  <div class="col-6 textDiv" >
+                    <h5>You will have <span class="numberSpan">1</span> husband.</h5>
+                  </div>
+                </div>
+                <hr>
+
+
+
+              <div class="row casesRow">
+                  <div class="col-6 imageDiv">
+                      <img src="{% static 'images/22_future_indicator/children.png' %}" alt="Children">
+                  </div>
+
+                  <div class="col-6 textDiv" >
+                    <h5>You will have  <span class="numberSpan">4</span>Childrens.</h5>
+                  </div>
+                </div>
+                <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                {% elif Name == "f" and Gender == "Female" %}
+
+                <div class="row casesRow">
+                    <div class="col-6 imageDiv">
+                        <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                    </div>
+
+                    <div class="col-6 textDiv" >
+                      <h5>Your job will be: <span class="numberSpan">Police</span>.</h5>
+                    </div>
+                  </div>
+                  <hr>
+
+
+                   <div class="row casesRow">
+                    <div class="col-6 imageDiv">
+                        <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                    </div>
+
+                    <div class="col-6 textDiv" >
+                      <h5>Your salary will be <span class="numberSpan">$8647</span>.</h5>
+                    </div>
+                  </div>
+                  <hr>
+
+
+
+                  <div class="row casesRow">
+                    <div class="col-6 imageDiv">
+                        <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                    </div>
+
+                    <div class="col-6 textDiv" >
+                      <h5>You will have <span class="numberSpan">4</span> houses.</h5>
+                    </div>
+                  </div>
+                  <hr>
+
+
+                 <div class="row casesRow">
+                    <div class="col-6 imageDiv">
+                        <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                    </div>
+
+                    <div class="col-6 textDiv" >
+                      <h5>You will have <span class="numberSpan">4</span> Cars.</h5>
+                    </div>
+                  </div>
+                  <hr>
+
+
+
+                <div class="row casesRow">
+                    <div class="col-6 imageDiv">
+                        <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                    </div>
+
+                    <div class="col-6 textDiv" >
+                      <h5>You will have <span class="numberSpan">1</span> husband.</h5>
+                    </div>
+                  </div>
+                  <hr>
+
+
+
+
+
+
+
+
+
+
+
+                  {% elif Name == "g" and Gender == "Female" %}
+
+                  <div class="row casesRow">
+                      <div class="col-6 imageDiv">
+                          <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                      </div>
+
+                      <div class="col-6 textDiv" >
+                        <h5>Your job will be: <span class="numberSpan">Judge</span>.</h5>
+                      </div>
+                    </div>
+                    <hr>
+
+
+                     <div class="row casesRow">
+                      <div class="col-6 imageDiv">
+                          <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                      </div>
+
+                      <div class="col-6 textDiv" >
+                        <h5>Your salary will be <span class="numberSpan">$5675</span>.</h5>
+                      </div>
+                    </div>
+                    <hr>
+
+
+
+                    <div class="row casesRow">
+                      <div class="col-6 imageDiv">
+                          <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                      </div>
+
+                      <div class="col-6 textDiv" >
+                        <h5>You will have <span class="numberSpan">1</span> house.</h5>
+                      </div>
+                    </div>
+                    <hr>
+
+
+                   <div class="row casesRow">
+                      <div class="col-6 imageDiv">
+                          <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                      </div>
+
+                      <div class="col-6 textDiv" >
+                        <h5>You will have <span class="numberSpan">1</span> Car.</h5>
+                      </div>
+                    </div>
+                    <hr>
+
+
+
+                  <div class="row casesRow">
+                      <div class="col-6 imageDiv">
+                          <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                      </div>
+
+                      <div class="col-6 textDiv" >
+                        <h5>Your bank balance will be <span class="numberSpan">2 Million US Dollars</span> .</h5>
+                      </div>
+                    </div>
+                    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    {% elif Name == "h" and Gender == "Female" %}
+
+                    <div class="row casesRow">
+                        <div class="col-6 imageDiv">
+                            <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                        </div>
+
+                        <div class="col-6 textDiv" >
+                          <h5>You will have: <span class="numberSpan">
+                            1 husband</span>.</h5>
+                        </div>
+                      </div>
+                      <hr>
+
+
+                       <div class="row casesRow">
+                        <div class="col-6 imageDiv">
+                            <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                        </div>
+
+                        <div class="col-6 textDiv" >
+                          <h5>Your salary will be <span class="numberSpan"> $1124</span>.</h5>
+                        </div>
+                      </div>
+                      <hr>
+
+
+
+                      <div class="row casesRow">
+                        <div class="col-6 imageDiv">
+                            <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                        </div>
+
+                        <div class="col-6 textDiv" >
+                          <h5>You will have <span class="numberSpan">2</span> houses.</h5>
+                        </div>
+                      </div>
+                      <hr>
+
+
+                     <div class="row casesRow">
+                        <div class="col-6 imageDiv">
+                            <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                        </div>
+
+                        <div class="col-6 textDiv" >
+                          <h5>You will have <span class="numberSpan">4</span> Cars.</h5>
+                        </div>
+                      </div>
+                      <hr>
+
+
+
+                    <div class="row casesRow">
+                        <div class="col-6 imageDiv">
+                            <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                        </div>
+
+                        <div class="col-6 textDiv" >
+                          <h5>Your bank balance will be <span class="numberSpan">33.5 Million US Dollars</span>.</h5>
+                        </div>
+                      </div>
+                      <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      {% elif Name == "i" and Gender == "Female" %}
+
+                      <div class="row casesRow">
+                          <div class="col-6 imageDiv">
+                              <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                          </div>
+
+                          <div class="col-6 textDiv" >
+                            <h5>Your job will be: <span class="numberSpan">CEO of Company</span>.</h5>
+                          </div>
+                        </div>
+                        <hr>
+
+
+                         <div class="row casesRow">
+                          <div class="col-6 imageDiv">
+                              <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                          </div>
+
+                          <div class="col-6 textDiv" >
+                            <h5>You will have <span class="numberSpan">1 husband</span>.</h5>
+                          </div>
+                        </div>
+                        <hr>
+
+
+
+                        <div class="row casesRow">
+                          <div class="col-6 imageDiv">
+                              <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                          </div>
+
+                          <div class="col-6 textDiv" >
+                            <h5>You will have <span class="numberSpan">4</span> houses.</h5>
+                          </div>
+                        </div>
+                        <hr>
+
+
+                       <div class="row casesRow">
+                          <div class="col-6 imageDiv">
+                              <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                          </div>
+
+                          <div class="col-6 textDiv" >
+                            <h5>You will have <span class="numberSpan">2</span> Cars.</h5>
+                          </div>
+                        </div>
+                        <hr>
+
+
+
+                      <div class="row casesRow">
+                          <div class="col-6 imageDiv">
+                              <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                          </div>
+
+                          <div class="col-6 textDiv" >
+                            <h5>Your bank balance will be <span class="numberSpan">2.7 Million US Dollars</span> .</h5>
+                          </div>
+                        </div>
+                        <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        {% elif Name == "j" and Gender == "Female" %}
+
+                        <div class="row casesRow">
+                            <div class="col-6 imageDiv">
+                                <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                            </div>
+
+                            <div class="col-6 textDiv" >
+                              <h5>Your job will be: <span class="numberSpan">Astronomer</span>.</h5>
+                            </div>
+                          </div>
+                          <hr>
+
+
+                           <div class="row casesRow">
+                            <div class="col-6 imageDiv">
+                                <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                            </div>
+
+                            <div class="col-6 textDiv" >
+                              <h5>Your salary will be <span class="numberSpan">$4577</span>.</h5>
+                            </div>
+                          </div>
+                          <hr>
+
+
+
+                          <div class="row casesRow">
+                            <div class="col-6 imageDiv">
+                                <img src="{% static 'images/22_future_indicator/children.png' %}" alt="children">
+                            </div>
+
+                            <div class="col-6 textDiv" >
+                              <h5>You will have <span class="numberSpan">6 Childrens</span>.</h5>
+                            </div>
+                          </div>
+                          <hr>
+
+
+                         <div class="row casesRow">
+                            <div class="col-6 imageDiv">
+                                <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                            </div>
+
+                            <div class="col-6 textDiv" >
+                              <h5>You will have <span class="numberSpan">5</span> Cars.</h5>
+                            </div>
+                          </div>
+                          <hr>
+
+
+
+                        <div class="row casesRow">
+                            <div class="col-6 imageDiv">
+                                <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                            </div>
+
+                            <div class="col-6 textDiv" >
+                              <h5>You will have <span class="numberSpan">1 husband</span>.</h5>
+                            </div>
+                          </div>
+                          <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          {% elif Name == "k" and Gender == "Female" %}
+
+                          <div class="row casesRow">
+                              <div class="col-6 imageDiv">
+                                  <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                              </div>
+
+                              <div class="col-6 textDiv" >
+                                <h5>Your job will be: <span class="numberSpan">Hair cutter</span>.</h5>
+                              </div>
+                            </div>
+                            <hr>
+
+
+                             <div class="row casesRow">
+                              <div class="col-6 imageDiv">
+                                  <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                              </div>
+
+                              <div class="col-6 textDiv" >
+                                <h5>Your salary will be <span class="numberSpan">$6745</span>.</h5>
+                              </div>
+                            </div>
+                            <hr>
+
+
+
+                            <div class="row casesRow">
+                              <div class="col-6 imageDiv">
+                                  <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                              </div>
+
+                              <div class="col-6 textDiv" >
+                                <h5>You will have <span class="numberSpan">5</span> houses.</h5>
+                              </div>
+                            </div>
+                            <hr>
+
+
+                           <div class="row casesRow">
+                              <div class="col-6 imageDiv">
+                                  <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                              </div>
+
+                              <div class="col-6 textDiv" >
+                                <h5>You will have <span class="numberSpan">3</span> Cars.</h5>
+                              </div>
+                            </div>
+                            <hr>
+
+
+
+                          <div class="row casesRow">
+                              <div class="col-6 imageDiv">
+                                  <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                              </div>
+
+                              <div class="col-6 textDiv" >
+                                <h5>You will have <span class="numberSpan">1</span> husband.</h5>
+                              </div>
+                            </div>
+                            <hr>
+
+
+
+
+
+
+
+
+
+
+
+                            {% elif Name == "l" and Gender == "Female" %}
+
+                            <div class="row casesRow">
+                                <div class="col-6 imageDiv">
+                                    <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                </div>
+
+                                <div class="col-6 textDiv" >
+                                  <h5>Your job will be: <span class="numberSpan">Book Seller</span>.</h5>
+                                </div>
+                              </div>
+                              <hr>
+
+
+                               <div class="row casesRow">
+                                <div class="col-6 imageDiv">
+                                    <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                                </div>
+
+                                <div class="col-6 textDiv" >
+                                  <h5>You will have  <span class="numberSpan">1 husband</span>.</h5>
+                                </div>
+                              </div>
+                              <hr>
+
+
+
+                              <div class="row casesRow">
+                                <div class="col-6 imageDiv">
+                                    <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                </div>
+
+                                <div class="col-6 textDiv" >
+                                  <h5>You will have <span class="numberSpan">6</span> houses.</h5>
+                                </div>
+                              </div>
+                              <hr>
+
+
+                             <div class="row casesRow">
+                                <div class="col-6 imageDiv">
+                                    <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                </div>
+
+                                <div class="col-6 textDiv" >
+                                  <h5>You will have <span class="numberSpan">4</span> Cars.</h5>
+                                </div>
+                              </div>
+                              <hr>
+
+
+
+                            <div class="row casesRow">
+                                <div class="col-6 imageDiv">
+                                    <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                </div>
+
+                                <div class="col-6 textDiv" >
+                                  <h5>Your bank balance will be <span class="numberSpan">27.15 Million US Dollars</span>.</h5>
+                                </div>
+                              </div>
+                              <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              {% elif Name == "m" and Gender == "Female" %}
+
+                              <div class="row casesRow">
+                                  <div class="col-6 imageDiv">
+                                      <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                  </div>
+
+                                  <div class="col-6 textDiv" >
+                                    <h5>Your job will be: <span class="numberSpan">Cooker</span>.</h5>
+                                  </div>
+                                </div>
+                                <hr>
+
+
+                                 <div class="row casesRow">
+                                  <div class="col-6 imageDiv">
+                                      <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                  </div>
+
+                                  <div class="col-6 textDiv" >
+                                    <h5>Your salary will be <span class="numberSpan"> $2580</span>.</h5>
+                                  </div>
+                                </div>
+                                <hr>
+
+
+
+                                <div class="row casesRow">
+                                  <div class="col-6 imageDiv">
+                                      <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                                  </div>
+
+                                  <div class="col-6 textDiv" >
+                                    <h5>You will have <span class="numberSpan">1 husband</span>.</h5>
+                                  </div>
+                                </div>
+                                <hr>
+
+
+                               <div class="row casesRow">
+                                  <div class="col-6 imageDiv">
+                                      <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                  </div>
+
+                                  <div class="col-6 textDiv" >
+                                    <h5>You will have <span class="numberSpan">7</span> Cars.</h5>
+                                  </div>
+                                </div>
+                                <hr>
+
+
+
+                              <div class="row casesRow">
+                                  <div class="col-6 imageDiv">
+                                      <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                  </div>
+
+                                  <div class="col-6 textDiv" >
+                                    <h5>Your bank balance will be <span class="numberSpan">247.15 Million US Dollars</span>.</h5>
+                                  </div>
+                                </div>
+                                <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                {% elif Name == "n" and Gender == "Female" %}
+
+                                <div class="row casesRow">
+                                    <div class="col-6 imageDiv">
+                                        <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                    </div>
+
+                                    <div class="col-6 textDiv" >
+                                      <h5>Your job will be: <span class="numberSpan">Professor</span>.</h5>
+                                    </div>
+                                  </div>
+                                  <hr>
+
+
+                                   <div class="row casesRow">
+                                    <div class="col-6 imageDiv">
+                                        <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                    </div>
+
+                                    <div class="col-6 textDiv" >
+                                      <h5>Your salary will be <span class="numberSpan">$4570</span>.</h5>
+                                    </div>
+                                  </div>
+                                  <hr>
+
+
+
+                                  <div class="row casesRow">
+                                    <div class="col-6 imageDiv">
+                                        <img src="{% static 'images/22_future_indicator/children.png' %}" alt="children">
+                                    </div>
+
+                                    <div class="col-6 textDiv" >
+                                      <h5>You will have <span class="numberSpan">1 children</span>.</h5>
+                                    </div>
+                                  </div>
+                                  <hr>
+
+
+                                 <div class="row casesRow">
+                                    <div class="col-6 imageDiv">
+                                        <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                    </div>
+
+                                    <div class="col-6 textDiv" >
+                                      <h5>You will have <span class="numberSpan">9</span> Cars.</h5>
+                                    </div>
+                                  </div>
+                                  <hr>
+
+
+
+                                <div class="row casesRow">
+                                    <div class="col-6 imageDiv">
+                                        <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                                    </div>
+
+                                    <div class="col-6 textDiv" >
+                                      <h5>You will have <span class="numberSpan">1</span> husband.</h5>
+                                    </div>
+                                  </div>
+                                  <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  {% elif Name == "o" and Gender == "Female" %}
+
+                                  <div class="row casesRow">
+                                      <div class="col-6 imageDiv">
+                                          <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                      </div>
+
+                                      <div class="col-6 textDiv" >
+                                        <h5>Your job will be: <span class="numberSpan">Software Engineer</span>.</h5>
+                                      </div>
+                                    </div>
+                                    <hr>
+
+
+                                     <div class="row casesRow">
+                                      <div class="col-6 imageDiv">
+                                          <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                      </div>
+
+                                      <div class="col-6 textDiv" >
+                                        <h5>Your salary will be <span class="numberSpan">$3080</span>.</h5>
+                                      </div>
+                                    </div>
+                                    <hr>
+
+
+
+                                    <div class="row casesRow">
+                                      <div class="col-6 imageDiv">
+                                          <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                      </div>
+
+                                      <div class="col-6 textDiv" >
+                                        <h5>You will have <span class="numberSpan">3</span> houses.</h5>
+                                      </div>
+                                    </div>
+                                    <hr>
+
+
+                                   <div class="row casesRow">
+                                      <div class="col-6 imageDiv">
+                                          <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                      </div>
+
+                                      <div class="col-6 textDiv" >
+                                        <h5>You will have <span class="numberSpan">7</span> Cars.</h5>
+                                      </div>
+                                    </div>
+                                    <hr>
+
+
+
+                                  <div class="row casesRow">
+                                      <div class="col-6 imageDiv">
+                                          <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                      </div>
+
+                                      <div class="col-6 textDiv" >
+                                        <h5>Your bank balance will be <span class="numberSpan">475.05 Million US Dollars</span>.</h5>
+                                      </div>
+                                    </div>
+                                    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    {% elif Name == "p" and Gender == "Female" %}
+
+                                    <div class="row casesRow">
+                                        <div class="col-6 imageDiv">
+                                            <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                        </div>
+
+                                        <div class="col-6 textDiv" >
+                                          <h5>Your job will be: <span class="numberSpan">Surgeon</span>.</h5>
+                                        </div>
+                                      </div>
+                                      <hr>
+
+
+                                       <div class="row casesRow">
+                                        <div class="col-6 imageDiv">
+                                            <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                        </div>
+
+                                        <div class="col-6 textDiv" >
+                                          <h5>Your salary will be <span class="numberSpan">$4780</span>.</h5>
+                                        </div>
+                                      </div>
+                                      <hr>
+
+
+
+                                      <div class="row casesRow">
+                                        <div class="col-6 imageDiv">
+                                            <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                        </div>
+
+                                        <div class="col-6 textDiv" >
+                                          <h5>You will have <span class="numberSpan">4</span> houses.</h5>
+                                        </div>
+                                      </div>
+                                      <hr>
+
+
+                                     <div class="row casesRow">
+                                        <div class="col-6 imageDiv">
+                                            <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                                        </div>
+
+                                        <div class="col-6 textDiv" >
+                                          <h5>You will have <span class="numberSpan">1</span>husband.</h5>
+                                        </div>
+                                      </div>
+                                      <hr>
+
+
+
+                                    <div class="row casesRow">
+                                        <div class="col-6 imageDiv">
+                                            <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                        </div>
+
+                                        <div class="col-6 textDiv" >
+                                          <h5>Your bank balance will be <span class="numberSpan">784.5 Million US Dollars</span>.</h5>
+                                        </div>
+                                      </div>
+                                      <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      {% elif Name == "q" and Gender == "Female" %}
+
+                                      <div class="row casesRow">
+                                          <div class="col-6 imageDiv">
+                                              <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                          </div>
+
+                                          <div class="col-6 textDiv" >
+                                            <h5>Your job will be: <span class="numberSpan">Car Dealer</span>.</h5>
+                                          </div>
+                                        </div>
+                                        <hr>
+
+
+                                         <div class="row casesRow">
+                                          <div class="col-6 imageDiv">
+                                              <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                          </div>
+
+                                          <div class="col-6 textDiv" >
+                                            <h5>Your salary will be <span class="numberSpan">$3201</span>.</h5>
+                                          </div>
+                                        </div>
+                                        <hr>
+
+
+
+                                        <div class="row casesRow">
+                                          <div class="col-6 imageDiv">
+                                              <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                          </div>
+
+                                          <div class="col-6 textDiv" >
+                                            <h5>You will have <span class="numberSpan">7</span> houses.</h5>
+                                          </div>
+                                        </div>
+                                        <hr>
+
+
+                                       <div class="row casesRow">
+                                          <div class="col-6 imageDiv">
+                                              <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                          </div>
+
+                                          <div class="col-6 textDiv" >
+                                            <h5>You will have <span class="numberSpan">1</span> Car.</h5>
+                                          </div>
+                                        </div>
+                                        <hr>
+
+
+
+                                      <div class="row casesRow">
+                                          <div class="col-6 imageDiv">
+                                              <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                                          </div>
+
+                                          <div class="col-6 textDiv" >
+                                            <h5>You will have <span class="numberSpan">1</span> husband.</h5>
+                                          </div>
+                                        </div>
+                                        <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        {% elif Name == "r" and Gender == "Female" %}
+
+                                        <div class="row casesRow">
+                                            <div class="col-6 imageDiv">
+                                                <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                            </div>
+
+                                            <div class="col-6 textDiv" >
+                                              <h5>Your job will be: <span class="numberSpan">Cashier</span>.</h5>
+                                            </div>
+                                          </div>
+                                          <hr>
+
+
+                                           <div class="row casesRow">
+                                            <div class="col-6 imageDiv">
+                                                <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                                            </div>
+
+                                            <div class="col-6 textDiv" >
+                                              <h5>You will have <span class="numberSpan">1 husband</span>.</h5>
+                                            </div>
+                                          </div>
+                                          <hr>
+
+
+
+                                          <div class="row casesRow">
+                                            <div class="col-6 imageDiv">
+                                                <img src="{% static 'images/22_future_indicator/children.png' %}" alt="children">
+                                            </div>
+
+                                            <div class="col-6 textDiv" >
+                                              <h5>You will have <span class="numberSpan">2 Childrens</span> .</h5>
+                                            </div>
+                                          </div>
+                                          <hr>
+
+
+                                         <div class="row casesRow">
+                                            <div class="col-6 imageDiv">
+                                                <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                            </div>
+
+                                            <div class="col-6 textDiv" >
+                                              <h5>You will have <span class="numberSpan">6</span> Cars.</h5>
+                                            </div>
+                                          </div>
+                                          <hr>
+
+
+
+                                        <div class="row casesRow">
+                                            <div class="col-6 imageDiv">
+                                                <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                            </div>
+
+                                            <div class="col-6 textDiv" >
+                                              <h5>Your bank balance will be <span class="numberSpan">99.6 Million US Dollars
+                                              </span>.</h5>
+                                            </div>
+                                          </div>
+                                          <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                          {% elif Name == "s" and Gender == "Female" %}
+
+                                          <div class="row casesRow">
+                                              <div class="col-6 imageDiv">
+                                                  <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                              </div>
+
+                                              <div class="col-6 textDiv" >
+                                                <h5>Your job will be: <span class="numberSpan">Mechanic</span>.</h5>
+                                              </div>
+                                            </div>
+                                            <hr>
+
+
+                                             <div class="row casesRow">
+                                              <div class="col-6 imageDiv">
+                                                  <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                              </div>
+
+                                              <div class="col-6 textDiv" >
+                                                <h5>Your salary will be <span class="numberSpan">$7830</span>.</h5>
+                                              </div>
+                                            </div>
+                                            <hr>
+
+
+
+                                            <div class="row casesRow">
+                                              <div class="col-6 imageDiv">
+                                                  <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                              </div>
+
+                                              <div class="col-6 textDiv" >
+                                                <h5>You will have <span class="numberSpan">1</span> house.</h5>
+                                              </div>
+                                            </div>
+                                            <hr>
+
+
+                                           <div class="row casesRow">
+                                              <div class="col-6 imageDiv">
+                                                  <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                              </div>
+
+                                              <div class="col-6 textDiv" >
+                                                <h5>You will have <span class="numberSpan">4</span> Cars.</h5>
+                                              </div>
+                                            </div>
+                                            <hr>
+
+
+
+                                          <div class="row casesRow">
+                                              <div class="col-6 imageDiv">
+                                                  <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                                              </div>
+
+                                              <div class="col-6 textDiv" >
+                                                <h5>You will have  <span class="numberSpan">1</span> husband.</h5>
+                                              </div>
+                                            </div>
+                                            <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                            {% elif Name == "t" and Gender == "Female" %}
+
+                                            <div class="row casesRow">
+                                                <div class="col-6 imageDiv">
+                                                    <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                                </div>
+
+                                                <div class="col-6 textDiv" >
+                                                  <h5>Your job will be: <span class="numberSpan">Producer</span>.</h5>
+                                                </div>
+                                              </div>
+                                              <hr>
+
+
+                                               <div class="row casesRow">
+                                                <div class="col-6 imageDiv">
+                                                    <img src="{% static 'images/22_future_indicator/children.png' %}" alt="children">
+                                                </div>
+
+                                                <div class="col-6 textDiv" >
+                                                  <h5>You will have  <span class="numberSpan">8 Childrens</span>.</h5>
+                                                </div>
+                                              </div>
+                                              <hr>
+
+
+
+                                              <div class="row casesRow">
+                                                <div class="col-6 imageDiv">
+                                                    <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                                </div>
+
+                                                <div class="col-6 textDiv" >
+                                                  <h5>You will have <span class="numberSpan">4</span> houses.</h5>
+                                                </div>
+                                              </div>
+                                              <hr>
+
+
+                                             <div class="row casesRow">
+                                                <div class="col-6 imageDiv">
+                                                    <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                                </div>
+
+                                                <div class="col-6 textDiv" >
+                                                  <h5>You will have <span class="numberSpan">1</span> Car.</h5>
+                                                </div>
+                                              </div>
+                                              <hr>
+
+
+
+                                            <div class="row casesRow">
+                                                <div class="col-6 imageDiv">
+                                                    <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                                                </div>
+
+                                                <div class="col-6 textDiv" >
+                                                  <h5>You will have <span class="numberSpan">1</span> husband.</h5>
+                                                </div>
+                                              </div>
+                                              <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                              {% elif Name == "u" and Gender == "Female" %}
+
+                                              <div class="row casesRow">
+                                                  <div class="col-6 imageDiv">
+                                                      <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                                  </div>
+
+                                                  <div class="col-6 textDiv" >
+                                                    <h5>Your job will be: <span class="numberSpan">Motivational Speaker</span>.</h5>
+                                                  </div>
+                                                </div>
+                                                <hr>
+
+
+                                                 <div class="row casesRow">
+                                                  <div class="col-6 imageDiv">
+                                                      <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                                  </div>
+
+                                                  <div class="col-6 textDiv" >
+                                                    <h5>Your salary will be <span class="numberSpan">$7860</span>.</h5>
+                                                  </div>
+                                                </div>
+                                                <hr>
+
+
+
+                                                <div class="row casesRow">
+                                                  <div class="col-6 imageDiv">
+                                                      <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                                  </div>
+
+                                                  <div class="col-6 textDiv" >
+                                                    <h5>You will have <span class="numberSpan">3</span> houses.</h5>
+                                                  </div>
+                                                </div>
+                                                <hr>
+
+
+                                               <div class="row casesRow">
+                                                  <div class="col-6 imageDiv">
+                                                      <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                                                  </div>
+
+                                                  <div class="col-6 textDiv" >
+                                                    <h5>You will have <span class="numberSpan">1 husband</span>.</h5>
+                                                  </div>
+                                                </div>
+                                                <hr>
+
+
+
+                                              <div class="row casesRow">
+                                                  <div class="col-6 imageDiv">
+                                                      <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                                  </div>
+
+                                                  <div class="col-6 textDiv" >
+                                                    <h5>Your bank balance will be <span class="numberSpan">4.22 Million US Dollars</span> .</h5>
+                                                  </div>
+                                                </div>
+                                                <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                {% elif Name == "v" and Gender == "Female" %}
+
+                                                <div class="row casesRow">
+                                                    <div class="col-6 imageDiv">
+                                                        <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                                    </div>
+
+                                                    <div class="col-6 textDiv" >
+                                                      <h5>Your job will be: <span class="numberSpan">Cooker</span>.</h5>
+                                                    </div>
+                                                  </div>
+                                                  <hr>
+
+
+                                                   <div class="row casesRow">
+                                                    <div class="col-6 imageDiv">
+                                                        <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                                    </div>
+
+                                                    <div class="col-6 textDiv" >
+                                                      <h5>Your salary will be <span class="numberSpan">$6560</span>.</h5>
+                                                    </div>
+                                                  </div>
+                                                  <hr>
+
+
+
+                                                  <div class="row casesRow">
+                                                    <div class="col-6 imageDiv">
+                                                        <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                                                    </div>
+
+                                                    <div class="col-6 textDiv" >
+                                                      <h5>You will have <span class="numberSpan">1 husband</span>.</h5>
+                                                    </div>
+                                                  </div>
+                                                  <hr>
+
+
+                                                 <div class="row casesRow">
+                                                    <div class="col-6 imageDiv">
+                                                        <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                                    </div>
+
+                                                    <div class="col-6 textDiv" >
+                                                      <h5>You will have <span class="numberSpan">4</span> Cars.</h5>
+                                                    </div>
+                                                  </div>
+                                                  <hr>
+
+
+
+                                                <div class="row casesRow">
+                                                    <div class="col-6 imageDiv">
+                                                        <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                                    </div>
+
+                                                    <div class="col-6 textDiv" >
+                                                      <h5>Your bank balance will be <span class="numberSpan">12.15 Million US Dollars</span> .</h5>
+                                                    </div>
+                                                  </div>
+                                                  <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  {% elif Name == "w" and Gender == "Female" %}
+
+                                                  <div class="row casesRow">
+                                                      <div class="col-6 imageDiv">
+                                                          <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                                      </div>
+
+                                                      <div class="col-6 textDiv" >
+                                                        <h5>Your job will be: <span class="numberSpan">Social Activist</span>.</h5>
+                                                      </div>
+                                                    </div>
+                                                    <hr>
+
+
+                                                     <div class="row casesRow">
+                                                      <div class="col-6 imageDiv">
+                                                          <img src="{% static 'images/22_future_indicator/children.png' %}" alt="children">
+                                                      </div>
+
+                                                      <div class="col-6 textDiv" >
+                                                        <h5>You will have  <span class="numberSpan">4 Childrens</span>.</h5>
+                                                      </div>
+                                                    </div>
+                                                    <hr>
+
+
+
+                                                    <div class="row casesRow">
+                                                      <div class="col-6 imageDiv">
+                                                          <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                                      </div>
+
+                                                      <div class="col-6 textDiv" >
+                                                        <h5>You will have <span class="numberSpan">2</span> houses.</h5>
+                                                      </div>
+                                                    </div>
+                                                    <hr>
+
+
+                                                   <div class="row casesRow">
+                                                      <div class="col-6 imageDiv">
+                                                          <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                                                      </div>
+
+                                                      <div class="col-6 textDiv" >
+                                                        <h5>You will have <span class="numberSpan">1 husband</span>.</h5>
+                                                      </div>
+                                                    </div>
+                                                    <hr>
+
+
+
+                                                  <div class="row casesRow">
+                                                      <div class="col-6 imageDiv">
+                                                          <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                                      </div>
+
+                                                      <div class="col-6 textDiv" >
+                                                        <h5>Your bank balance will be <span class="numberSpan">12.5 Million US Dollars</span> .</h5>
+                                                      </div>
+                                                    </div>
+                                                    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    {% elif Name == "x" and Gender == "Female" %}
+
+                                                    <div class="row casesRow">
+                                                        <div class="col-6 imageDiv">
+                                                            <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                                        </div>
+
+                                                        <div class="col-6 textDiv" >
+                                                          <h5>Your job will be: <span class="numberSpan">Baker</span>.</h5>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+
+
+                                                       <div class="row casesRow">
+                                                        <div class="col-6 imageDiv">
+                                                            <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                                        </div>
+
+                                                        <div class="col-6 textDiv" >
+                                                          <h5>Your salary will be <span class="numberSpan">$5560</span>.</h5>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+
+
+
+                                                      <div class="row casesRow">
+                                                        <div class="col-6 imageDiv">
+                                                            <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                                        </div>
+
+                                                        <div class="col-6 textDiv" >
+                                                          <h5>You will have <span class="numberSpan">8</span> houses.</h5>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+
+
+                                                     <div class="row casesRow">
+                                                        <div class="col-6 imageDiv">
+                                                            <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                                                        </div>
+
+                                                        <div class="col-6 textDiv" >
+                                                          <h5>You will have <span class="numberSpan">1 husband</span>.</h5>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+
+
+
+                                                    <div class="row casesRow">
+                                                        <div class="col-6 imageDiv">
+                                                            <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                                        </div>
+
+                                                        <div class="col-6 textDiv" >
+                                                          <h5>Your bank balance will be <span class="numberSpan">88.5 Million US Dollars</span>.</h5>
+                                                        </div>
+                                                      </div>
+                                                      <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                      {% elif Name == "y" and Gender == "Female" %}
+
+                                                      <div class="row casesRow">
+                                                          <div class="col-6 imageDiv">
+                                                              <img src="{% static 'images/22_future_indicator/job.png' %}" alt="Job">
+                                                          </div>
+
+                                                          <div class="col-6 textDiv" >
+                                                            <h5>Your job will be: <span class="numberSpan">Shopkeeper</span>.</h5>
+                                                          </div>
+                                                        </div>
+                                                        <hr>
+
+
+                                                         <div class="row casesRow">
+                                                          <div class="col-6 imageDiv">
+                                                              <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                                          </div>
+
+                                                          <div class="col-6 textDiv" >
+                                                            <h5>Your salary will be <span class="numberSpan">$4880</span>.</h5>
+                                                          </div>
+                                                        </div>
+                                                        <hr>
+
+
+
+                                                        <div class="row casesRow">
+                                                          <div class="col-6 imageDiv">
+                                                              <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                                          </div>
+
+                                                          <div class="col-6 textDiv" >
+                                                            <h5>You will have <span class="numberSpan">6</span> houses.</h5>
+                                                          </div>
+                                                        </div>
+                                                        <hr>
+
+
+                                                       <div class="row casesRow">
+                                                          <div class="col-6 imageDiv">
+                                                              <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                                          </div>
+
+                                                          <div class="col-6 textDiv" >
+                                                            <h5>You will have <span class="numberSpan">1</span> Car.</h5>
+                                                          </div>
+                                                        </div>
+                                                        <hr>
+
+
+
+                                                      <div class="row casesRow">
+                                                          <div class="col-6 imageDiv">
+                                                              <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                                                          </div>
+
+                                                          <div class="col-6 textDiv" >
+                                                            <h5>You will have<span class="numberSpan">1</span> husband.</h5>
+                                                          </div>
+                                                        </div>
+                                                        <hr>
+
+
+
+
+
+                                                         {% elif Name == "z" and Gender == "Female" %}
+
+                                                        <div class="row casesRow">
+                                                            <div class="col-6 imageDiv">
+                                                                <img src="{% static 'images/22_future_indicator/husband.png' %}" alt="husband">
+                                                            </div>
+
+                                                            <div class="col-6 textDiv" >
+                                                              <h5>You will have : <span class="numberSpan">1 husband</span>.</h5>
+                                                            </div>
+                                                          </div>
+                                                          <hr>
+
+
+                                                           <div class="row casesRow">
+                                                            <div class="col-6 imageDiv">
+                                                                <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Money">
+                                                            </div>
+
+                                                            <div class="col-6 textDiv" >
+                                                              <h5>Your salary will be <span class="numberSpan">$4179</span>.</h5>
+                                                            </div>
+                                                          </div>
+                                                          <hr>
+
+
+
+                                                          <div class="row casesRow">
+                                                            <div class="col-6 imageDiv">
+                                                                <img src="{% static 'images/22_future_indicator/house.png' %}" alt="House">
+                                                            </div>
+
+                                                            <div class="col-6 textDiv" >
+                                                              <h5>You will have <span class="numberSpan">5</span> houses.</h5>
+                                                            </div>
+                                                          </div>
+                                                          <hr>
+
+
+                                                         <div class="row casesRow">
+                                                            <div class="col-6 imageDiv">
+                                                                <img src="{% static 'images/22_future_indicator/car.png' %}" alt="Car">
+                                                            </div>
+
+                                                            <div class="col-6 textDiv" >
+                                                              <h5>You will have <span class="numberSpan">6</span> Cars.</h5>
+                                                            </div>
+                                                          </div>
+                                                          <hr>
+
+
+
+                                                        <div class="row casesRow">
+                                                            <div class="col-6 imageDiv">
+                                                                <img src="{% static 'images/22_future_indicator/money.png' %}" alt="Bank Balance">
+                                                            </div>
+
+                                                            <div class="col-6 textDiv" >
+                                                              <h5>Your bank balance will be <span class="numberSpan">69.5 Million US Dollars</span> .</h5>
+                                                            </div>
+                                                          </div>
+                                                          <hr>
+
+
+    {% endif %}
+
+</div>
+    <br>
+    <br>
+
+    <h6 id="copyMessaage">Copied</h6>
+<button onclick="copyLink()" class="shareButton" id="copyBtnURl">Share&nbsp;<i class="fa fa-share"></i></button>
+
+
+
+     <script>
+
+
+     function copyLink()
+    {
+
+        var dummy = document.createElement('input'),
+          text = window.location.href;
+        document.body.appendChild(dummy);
+        dummy.value = text;
+        dummy.select();
+        document.execCommand('copy');
+        document.body.removeChild(dummy);
+        document.getElementById('copyMessaage').style.display = "block";
+        alert('Link copied. Now share it on your social media profiles.');
+    }
+
+    </script>
+
+{% endblock %}

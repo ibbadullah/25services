@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block robots %}noindex,nofollow{% endblock %}
+
+{% block stylesheet %}
+    <style>
+    body{
+        background-color: cadetblue;
+    }
+    section h2{
+        font-size: 26px;
+        font-weight: 700px;
+    }
+    #printFullName {
+      font-weight: bold;
+    }
+    .cvbg{
+        margin: 100px;
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    </style>
+{% endblock %}
+
+
+
+{% block content %}
+        <script src="{% static 'other_libraries/html2pdf/html2pdf.js' %}"></script>
+        <div class="container cvbg">
+           <div class="row" id="cvDiv">
+            <div class="col-md-12">
+              <div class="jumbotron">
+          <h1 class="display-4" id="printFullName">{{ FullName }}</h1>
+          <p class="lead" id="printFullAddress">{{ Address }}</p>
+          <p><a id="printContactEmail" href="#">{{ Email }}</a></p>
+        </div>
+            <hr>
+            <section id="bio">
+              <h2>Biography</h2>
+
+              <div class="contentItems">
+                <p id="printBioData">
+                  {{ Bio }}
+                </p>
+              </div>
+              </section>
+                <hr>
+                {% if JobTitle1 == '' %}
+                {% else %}
+                  <section id="exp">
+                  <h2>EXPERIENCE</h2>
+                         <div class="contentItems" id="printExpData">
+                           <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                              <div class="resume-content">
+                                <h3 style="font-size: 20px;font-weight: 600" class="mb-0" id="printExpTitle">{{ JobTitle1 }}</h3>
+                                <div class="subheading mb-3" id="printExpComp">{{ JobCompany1 }}</div>
+                                <p id="printExpCont">{{ JobDes1 }}</p>
+                              </div>
+                              <div class="resume-date text-md-right">
+                                <span class="text-primary" id="printExpDateStart">{{ JobStartDate1 }}</span> - <span class="text-primary" id="printExpDateEnd">{{ JobEndDate1 }}</span>
+                              </div>
+                            </div>
+                          </div>
+                  {% if JobTitle2 == '' %}
+                  {% else %}
+                      <div class="contentItems" id="printExpData">
+                           <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                              <div class="resume-content">
+                                <h3 style="font-size: 20px;font-weight: 600" class="mb-0">{{ JobTitle2 }}</h3>
+                                <div class="subheading mb-3" >{{ JobCompany2 }}</div>
+                                <p id="printExpCont">{{ JobDes2 }}</p>
+                              </div>
+                              <div class="resume-date text-md-right">
+                                <span class="text-primary" >{{ JobStartDate2 }}</span> - <span class="text-primary" >{{ JobEndDate2 }}</span>
+                              </div>
+                            </div>
+                          </div>
+                  {% endif %}
+
+                  {% if JobTitle3 == '' %}
+                  {% else %}
+                      <div class="contentItems" id="printExpData">
+                           <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+                              <div class="resume-content">
+                                <h3 style="font-size: 20px;font-weight: 600" class="mb-0">{{ JobTitle3 }}</h3>
+                                <div class="subheading mb-3" >{{ JobCompany3 }}</div>
+                                <p id="printExpCont">{{ JobDes3 }}</p>
+                              </div>
+                              <div class="resume-date text-md-right">
+                                <span class="text-primary" >{{ JobStartDate3 }}</span> - <span class="text-primary" >{{ JobEndDate3 }}</span>
+                              </div>
+                            </div>
+                          </div>
+                  {% endif %}
+
+                  </section>
+                {% endif %}
+              <hr>
+              <section id="edu">
+              <h2>EDUCATION</h2>
+
+              <div class="contentItems">
+                <p id="printEduData">
+                  {{ Education }}
+                </p>
+              </div>
+              </section>
+              <hr>
+              <section id="skill">
+              <h2>SKILLS</h2>
+
+             <div class="contentItems">
+                <p id="printSkillsData">
+                 {{ Skills }}
+                </p>
+              </div>
+              </section>
+              <hr>
+              <section id="int">
+              <h2>INTERESTS</h2>
+
+               <div class="contentItems">
+                <p id="printIntData">
+                  {{ Hobbies }}
+                </p>
+              </div>
+              </section>
+
+              <section id="aww">
+              <h2>AWARDS & CERTIFICATIONS</h2>
+              <p>{{ CertificatesAwards }}</p>
+              </section>
+              <h3></h3>
+            </div>
+          </div>
+
+        <div class="form-group">
+              <button class="btn btn-success form-control" id="downloadBtn">Download CV</button>
+          </div>
+        </div>
+
+
+
+
+    <script>
+
+      window.onload = function () {
+    document.getElementById("downloadBtn")
+        .addEventListener("click", () => {
+            const invoice = this.document.getElementById("cvDiv");
+            console.log(invoice);
+            console.log(window);
+            var opt = {
+                margin: 0.5,
+                filename: 'cv.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+            };
+            html2pdf().from(invoice).set(opt).save();
+        })
+        }
+  </script>
+
+{% endblock %}

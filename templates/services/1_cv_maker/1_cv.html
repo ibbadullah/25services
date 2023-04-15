@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %}Best Free Resume Builder{% endblock %}
+
+{% block description %}Create your own cv with cv maker. It would increase the opportunity of your job getting. Create your cv within a few minutes by putting your data and get an awesome cv.{% endblock %}
+{% block keywords %}online resume maker,simple cv maker free,free cv maker and download,free resume maker,best free resume builder{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}Best Free Resume Builder{% endblock %}
+{% block ogdescription %}Create your own cv with cv maker. It would increase the opportunity of your job getting. Create your cv within a few minutes by putting your data and get an awesome cv.{% endblock %}
+{% block ogurl %}https://25services.com/cv-maker/{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/ServiceImages/1_cv_maker.png' %}{% endblock %}
+
+{% block twittertitle %}Best Free Resume Builder{% endblock %}
+{% block twitterdescription %}Create your own cv with cv maker. It would increase the opportunity of your job getting. Create your cv within a few minutes by putting your data and get an awesome cv.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/ServiceImages/1_cv_maker.png' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/cv-maker/{% endblock %}
+
+
+{% block stylesheet %}
+    <style>
+    body{
+        background-color: cadetblue;
+    }
+
+    </style>
+
+{% endblock %}
+
+{% block content %}
+    <div class="container" style="margin-top: 100px;margin-bottom: 30px;background-color: white;padding: 20px;border-radius: 10px">
+        <h2>Best Free Resume Builder</h2>
+        <form action="#" method="post">
+            {% csrf_token %}
+              <div class="form-group">
+                <label for="" style="font-weight: 600">Full Name</label>
+                <input name="full_name" type="text" placeholder="Full name e.g. Imad Ali" id="fullName" class="form-control" required>
+              </div>
+
+               <div class="form-group">
+                <label for="" style="font-weight: 600">Address</label>
+                <input name="address" type="text" placeholder="Address e.g. house no 122, street 12" id="fullAddress" class="form-control" required>
+              </div>
+
+               <div class="form-group">
+                <label for="" style="font-weight: 600">E-Mail</label>
+                <input name="email" type="text" placeholder="Email e.g. abc@gmail.com" id="contactEmail" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="" style="font-weight: 600">Bio</label>
+                <textarea name="bio" type="text" placeholder="Write your bio here" id="aboutMe" class="form-control" required></textarea>
+              </div>
+            <hr>
+
+              <div class="form-group">
+                    <label for="" style="font-weight: 600">Experience</label>
+                    <div id="displayExperiences" class="text-center">
+                    </div>
+              </div>
+
+            <div class="form-group">
+                <label>Experience 1</label>
+                <input name="job_title1" style="margin-bottom: 10px" class="form-control"  placeholder="Job Title">
+                <input name="job_company1" style="margin-bottom: 10px"  class="form-control" placeholder="Company Name">
+                <textarea name="job_des1" style="margin-bottom: 10px"  class="form-control" placeholder="Job description..."></textarea>
+                <label for="js1">Job Start Date</label>
+                <input id="js1" name="job_start_date1" style="margin-bottom: 10px"  class="form-control" type="date">
+                <label for="je1">Job End Date</label>
+                <input id="je1" name="job_end_date1" style="margin-bottom: 10px"  class="form-control" type="date">
+            </div>
+            <div class="form-group">
+                <label>Experience 2</label>
+                <input name="job_title2" style="margin-bottom: 10px" class="form-control"  placeholder="Job Title">
+                <input name="job_company2" style="margin-bottom: 10px"  class="form-control" placeholder="Company Name">
+                <textarea name="job_des2" style="margin-bottom: 10px"  class="form-control" placeholder="Job description..."></textarea>
+                <label for="js2">Job Start Date</label>
+                <input id="js2" name="job_start_date2" style="margin-bottom: 10px"  class="form-control" type="date">
+                <label for="je2">Job End Date</label>
+                <input id="je2" name="job_end_date2" style="margin-bottom: 10px"  class="form-control" type="date">
+            </div>
+            <div class="form-group">
+                <label>Experience 3</label>
+                <input name="job_title3" style="margin-bottom: 10px" class="form-control"  placeholder="Job Title">
+                <input name="job_company3" style="margin-bottom: 10px"  class="form-control" placeholder="Company Name">
+                <textarea name="job_des3" style="margin-bottom: 10px"  class="form-control" placeholder="Job description..."></textarea>
+                <label for="js3">Job Start Date</label>
+                <input id="js3" name="job_start_date3" style="margin-bottom: 10px"  class="form-control" type="date">
+                <label for="je3">Job End Date</label>
+                <input id="je3" name="job_end_date3" style="margin-bottom: 10px"  class="form-control" type="date">
+            </div>
+            <hr>
+
+              <div class="form-group">
+                <label for="" style="font-weight: 600">Education</label>
+                <textarea name="eduaction" type="text" placeholder="Write your education here" id="myEducation" class="form-control" required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="" style="font-weight: 600">Skills</label>
+                <textarea name="skills" type="text" placeholder="Write your skills here" id="mySkills" class="form-control" required></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="" style="font-weight: 600">Hobbies</label>
+                <textarea name="hobbies" type="text" placeholder="Write your hobbies here" id="myInterests" class="form-control" required></textarea>
+              </div>
+            <br>
+            <div class="form-group">
+                <label for="" style="font-weight: 600">Certificates/awards</label>
+                <textarea name="certificates_awards" type="text" placeholder="Write your certificates/awards here"  class="form-control" required></textarea>
+              </div>
+
+            <hr>
+              <button type="submit" class="btn btn-success form-control">Next</button>
+            </form>
+        </div>
+
+
+{% endblock %}

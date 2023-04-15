@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Triangle Area Finder{% endblock %}
+
+{% block description %}You can find the triangle internal area of two sides and three sides with help of the triangle area finder. It gives the accurate and best result to measure the triangle area.{% endblock %}
+{% block keywords %}triangle area calculator,right triangle area calculator,triangle area finder,calculate triangle area,calculating triangle area{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}Triangle Area Finder{% endblock %}
+{% block ogdescription %}You can find the triangle internal area of two sides and three sides with help of the triangle area finder. It gives the accurate and best result to measure the triangle area.{% endblock %}
+{% block ogurl %}https://25services.com/triangle-area-finder/{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/ServiceImages/6_Triangle_Area_Finder.png' %}{% endblock %}
+
+{% block twittertitle %}Triangle Area Finder{% endblock %}
+{% block twitterdescription %}You can find the triangle internal area of two sides and three sides with help of the triangle area finder. It gives the accurate and best result to measure the triangle area.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/ServiceImages/6_Triangle_Area_Finder.png' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/triangle-area-finder/{% endblock %}
+
+
+{% block stylesheet %}
+            <style>
+
+
+            body {
+                font-size:20px;
+            }
+            div{
+                padding:5px;
+            }
+            input{
+                border:2px solid black;
+                padding:3px;
+                font-size:20px;
+                border-radius:3px;
+                font-weight:bold;
+            }
+            button{
+                padding:5px 10px;
+                font-size:20px;
+                border:0;
+                background-color:mediumseagreen;
+                border-radius:3px;
+                outline:0;
+                margin:5px;
+                color:white;}
+
+            select{
+                padding:3px 5px;
+                font-size:20px;
+                border:3px solid black;
+
+                border-radius:3px;
+                margin:5px 0;
+            }
+            #answer{
+                border-radius:10px;
+                background-color:#0C4B7F;
+                color:white;
+                margin:20px 0 0 0;
+                padding:10px;
+            }
+            label{
+                font-weight:bold;
+            }
+            .calcontent{
+                margin-top: 100px;
+                margin-bottom: 30px;
+            }
+        </style>
+{% endblock %}
+
+{% block content %}
+
+    <div class="container jumbotron calcontent">
+
+    <div>
+    <label for="type">Select Question Type:</label><br>
+    <select name="type" id="type">
+        <option value="0">All Sides Given</option>
+        <option value="1">Base And Height Given</option>
+    </select>
+    </div>
+    <div>
+    <div id="inputs">
+        <div>
+        <label for="a">Enter 1st Side:</label>
+        <input id="a" name="a" value=""  placeholder="in cm">
+        </div>
+        <div>
+        <label for="b">Enter 2nd Side:</label>
+        <input id="b" name="b" value=""  placeholder="in cm">
+        </div>
+        <div>
+        <label for="c">Enter 3rd Side:</label>
+        <input id="c" name="c" value=""  placeholder="in cm">
+        </div>
+        </div>
+        <button class="btn btn-info" id="do">Calculate Area</button>
+        <div id="answer">
+            <p>Total Area:</p>
+            <p id="ans" class="container">‏‏‎ ‎</p>
+        </div>
+
+        <script>
+
+function area(a,b,c){
+    if((a+b)<c || (b+c)<a || (c+a)<b){
+        alert("Entered Sides Does not Form an Actual Triangle");
+        return "<span style='color:red;'>Not A Triangle!</span>";
+    }
+    else{
+    var s=(a+b+c)/2;
+    var raw=s*(s-a)*(s-b)*(s-c);
+    var ans = Math.sqrt(raw);
+    return ans;
+    }
+}
+function areaBH(base,height){
+    var ans = (base*height)/2;
+    return ans;
+}
+function id(el){
+    return document.getElementById(el);
+}
+var type=0;
+var temp=[`<div>
+        <label for="a">Enter 1st Side:</label>
+        <input id="a" name="a" value="" placeholder="in cm">
+        </div>
+        <div>
+        <label for="b">Enter 2nd Side:</label>
+        <input id="b" name="b" value=""  placeholder="in cm">
+        </div>
+        <div>
+        <label for="c">Enter 3rd Side:</label>
+        <input id="c" name="c" value=""  placeholder="in cm">
+        </div>`,`<div><label for="base">Enter Base:</label>
+        <input id="base" name="base" value=""  placeholder="in cm">
+        </div>
+        <div>
+        <label for="height">Enter Height:</label>
+        <input id="height" name="height" value=""  placeholder="in cm">
+        </div>`];
+
+
+
+onload=()=>{
+    id("type").addEventListener("input",()=>{
+        var typ = parseInt(id("type").value);
+        id("inputs").innerHTML=temp[typ];
+        type=typ;
+    })
+    id("do").addEventListener("click",()=>{
+    if(type==0){
+    var a,b,c,ans;
+    a=parseInt(id("a").value);
+    b=parseInt(id("b").value);
+    c=parseInt(id("c").value);
+    ans=id("ans");
+    ans.innerHTML=area(a,b,c)+" sq. units";
+    }
+
+    if(type==1){
+        var base,height,ans;
+    base=parseInt(id("base").value);
+    height=parseInt(id("height").value);
+    ans=id("ans");
+    ans.innerHTML=areaBH(base,height)+" sq. units";
+    }
+    });
+
+    }
+
+        </script>
+    </div>
+    </div>
+        {% endblock %}
+
+

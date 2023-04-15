@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Online Text to Pdf Converter{% endblock %}
+
+{% block description %}Text to pdf is one of the best tools in which you can online change your text into pdf version and can download your text in pdf form. It is totally free to use it.{% endblock %}
+{% block keywords %}convert txt to pdf,online text to pdf converter,txt to pdf,txt to pdf converter free download,txt to pdf online{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}Online Text to Pdf Converter{% endblock %}
+{% block ogdescription %}Text to pdf is one of the best tools in which you can online change your text into pdf version and can download your text in pdf form. It is totally free to use it.{% endblock %}
+{% block ogurl %}https://25services.com/text-to-pdf/{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/ServiceImages/15_text_to_pdf.png' %}{% endblock %}
+
+{% block twittertitle %}Online Text to Pdf Converter{% endblock %}
+{% block twitterdescription %}Text to pdf is one of the best tools in which you can online change your text into pdf version and can download your text in pdf form. It is totally free to use it.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/ServiceImages/15_text_to_pdf.png' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/text-to-pdf/{% endblock %}
+
+{% block externalFiles %}
+    <link rel="stylesheet" href="{% static '15_text_to_pdf/css/15_text_to_pdf.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+{% endblock %}
+
+{% block stylesheet %}
+
+    <style>
+    body{
+        background-color: cadetblue;
+    }
+    </style>
+{% endblock %}
+
+
+{% block content %}
+
+
+<!-- partial:index.partial.html -->
+<div id="wrapper">
+
+	<form id="paper">
+
+        <br><br><br>
+		<h1>Online Text to Pdf Converter</h1>
+		<p>Note: Leave one line by pressing ENTER after completing two lines.</p>
+		<textarea class="textarea" placeholder="Enter your text..." id="text" name="text" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; "></textarea>
+		<br>
+
+		<button class="btndownload muzamil" value="Create" id="button">Download As PDF</button>
+
+	</form>
+
+</div>
+<!-- partial -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js'></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://static.tumblr.com/maopbtg/oimmiw86r/jquery.autosize-min.js'></script>
+    <script  src="{% static '15_text_to_pdf/javascript/15_text_to_pdf.js' %}"></script>
+
+
+{% endblock %}

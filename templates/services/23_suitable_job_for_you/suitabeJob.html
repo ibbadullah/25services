@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Suitable Job For Me Quiz{% endblock %}
+
+{% block description %}Check the job which is suitable for you with help of a suitable job for you. You can check your job by putting your name. It is easy and totally free to use.{% endblock %}
+{% block keywords %}a suitable job for a woman,suitable job for me quiz,suitable job test,most suitable job test{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}Suitable Job For Me Quiz{% endblock %}
+{% block ogdescription %}Check the job which is suitable for you with help of a suitable job for you. You can check your job by putting your name. It is easy and totally free to use.{% endblock %}
+{% block ogurl %}https://25services.com/suitable-job/{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}{% endblock %}
+
+{% block twittertitle %}Suitable Job For Me Quiz{% endblock %}
+{% block twitterdescription %}Check the job which is suitable for you with help of a suitable job for you. You can check your job by putting your name. It is easy and totally free to use.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/suitable-job/{% endblock %}
+
+{% block stylesheet %}
+   <style>
+     body{
+       background-color: #4CA39B;
+     }
+
+     .formDivContent{
+       margin-top: 150px;
+       background-color: white;
+       padding: 25px;
+       width: 70%;
+       margin-left: 15%;
+       border-radius: 15px;
+     }
+
+
+     .contentContianer h3{
+      margin-left:15%;
+      font-weight: 400;
+     }
+     #inputForm{
+       width: 70%;
+       margin-left:15%;
+     }
+     @media only screen and (max-width: 480px){
+
+      .formDivContent{
+       margin-top: 150px;
+       background-color: white;
+       padding: 0px;
+       width: 90%;
+       margin-left: 5%;
+       border-radius: 12px;
+     }
+
+
+     .contentContianer h3{
+      margin-left:10%;
+      font-weight: 400;
+      font-size: 22px;
+     }
+     #inputForm{
+       width: 80%;
+       margin-left:10%;
+     }
+
+     }
+
+    </style>
+
+{% endblock %}
+
+
+{% block content %}
+<div class="formDivContent">
+<div class="container contentContianer">
+  <br>
+  <h3>Suitable Job For Me Quiz</h3>
+  <form action="{% url 'IndicateSuitableJob' %}" method="get" id="inputForm">
+
+      <div class="form-group" >
+      <input type="text" name="name" placeholder="Enter your name" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-info form-control">Indicate</button>
+    </div>
+  </form>
+  <br>
+</div>
+</div>
+<br>
+    <br><br>
+
+{% endblock %}

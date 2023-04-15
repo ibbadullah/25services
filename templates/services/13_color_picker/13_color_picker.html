@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Online Color Picker{% endblock %}
+
+{% block description %}Find your desire color code with help of a color picker. It is one of the best color picker and easy to find your color code. Here you can find every color which you want.{% endblock %}
+{% block keywords %}hexadecimal color picker,hex code color picker,online color picker,color picker online,hsl color picker{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}Online Color Picker{% endblock %}
+{% block ogdescription %}Find your desire color code with help of a color picker. It is one of the best color picker and easy to find your color code. Here you can find every color which you want.{% endblock %}
+{% block ogurl %}https://25services.com/color-picker/{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/ServiceImages/13_color_picker.png' %}{% endblock %}
+
+{% block twittertitle %}Online Color Picker{% endblock %}
+{% block twitterdescription %}Find your desire color code with help of a color picker. It is one of the best color picker and easy to find your color code. Here you can find every color which you want.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/ServiceImages/13_color_picker.png' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/color-picker/{% endblock %}
+
+{% block stylesheet %}
+
+    <style>
+    body{
+        background-color: cadetblue;
+        padding : 30px;
+    }
+
+
+code {
+  padding: 5px 8px;
+  border-radius: 10px;
+  background-color: #f8f9f9;
+  color: #CC0066;
+}
+
+[type='color'] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+  border: none;
+}
+
+[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+[type='color']::-webkit-color-swatch {
+  border: none;
+}
+
+.color-picker {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #f8f9f9;
+}
+
+   footer{
+       display: none;
+   }
+
+    </style>
+{% endblock %}
+
+
+{% block content %}
+
+<br><br><br>
+<h1 style="color: white">Online Color Picker</h1>
+<p>A simple color picker that can be used with browsers that support <code>input[type=color]</code>.</p>
+<p style="margin-bottom:50px">You can see the HEX code of picked color.</p>
+
+<span class="color-picker">
+  <label for="colorPicker">
+    <input type="color" value="#1DB8CE" id="colorPicker">
+  </label>
+</span>
+
+<script>
+
+document.querySelectorAll('input[type=color]').forEach(function(picker) {
+
+var targetLabel = document.querySelector('label[for="' + picker.id + '"]'),
+  codeArea = document.createElement('span');
+
+codeArea.innerHTML = picker.value;
+targetLabel.appendChild(codeArea);
+
+picker.addEventListener('change', function() {
+  codeArea.innerHTML = picker.value;
+  targetLabel.appendChild(codeArea);
+});
+});
+
+
+</script>
+
+{% endblock %}

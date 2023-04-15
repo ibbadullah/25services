@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Find what would be your future?{% endblock %}
+
+{% block description %}Check your future with a future indicator. You can check your future simply by putting your names and it will tell you your future. It is easy and totally free to use.{% endblock %}
+{% block keywords %}us house price future indicator,housing lagging or future indicator,future indicator synonym{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}Find what would be your future?{% endblock %}
+{% block ogdescription %}Check your future with a future indicator. You can check your future simply by putting your names and it will tell you your future. It is easy and totally free to use.{% endblock %}
+{% block ogurl %}https://25services.com/future-indicator/{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/ServiceImages/22_future_indicator.jpg' %}{% endblock %}
+
+{% block twittertitle %}Find what would be your future?{% endblock %}
+{% block twitterdescription %}Check your future with a future indicator. You can check your future simply by putting your names and it will tell you your future. It is easy and totally free to use.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/ServiceImages/22_future_indicator.jpg' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/future-indicator/{% endblock %}
+
+{% block stylesheet %}
+   <style>
+     body{
+       background-color: #4CA39B;
+     }
+
+     .formDivContent{
+       margin-top: 150px;
+       background-color: white;
+       padding: 25px;
+       width: 70%;
+       margin-left: 15%;
+       border-radius: 15px;
+     }
+
+
+     .contentContianer h3{
+      margin-left:15%;
+      font-weight: 400;
+     }
+     #inputForm{
+       width: 70%;
+       margin-left:15%;
+     }
+     @media only screen and (max-width: 480px){
+
+      .formDivContent{
+       margin-top: 150px;
+       background-color: white;
+       padding: 0px;
+       width: 90%;
+       margin-left: 5%;
+       border-radius: 12px;
+     }
+
+
+     .contentContianer h3{
+      margin-left:10%;
+      font-weight: 400;
+      font-size: 22px;
+     }
+     #inputForm{
+       width: 80%;
+       margin-left:10%;
+     }
+
+     }
+
+
+
+    </style>
+
+{% endblock %}
+
+
+{% block content %}
+<div class="formDivContent">
+<div class="container contentContianer">
+  <br>
+  <h3>Find what would be your future?</h3>
+  <form action="{% url 'IndicateFuture' %}" method="get" id="inputForm">
+
+      <div class="form-group" >
+      <input type="text" name="name" placeholder="Enter your name" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+      <select name="gender" id="" class="form-control" required>
+        <option value="" disabled selected>Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-info form-control">Find</button>
+    </div>
+  </form>
+  <br>
+</div>
+</div>
+
+    <br><br>
+
+{% endblock %}

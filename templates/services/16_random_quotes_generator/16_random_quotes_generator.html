@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Random Quote Generator{% endblock %}
+
+{% block description %}Generate your favorite quotes with random quotes generator. It is one of the best sites for quotes to generate authenticated quotes. It is totally free to use.{% endblock %}
+{% block keywords %}random quote generator,quote generator,create a quote,ai quote generator,motivational quote generator{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}Random Quote Generator{% endblock %}
+{% block ogdescription %}Generate your favorite quotes with random quotes generator. It is one of the best sites for quotes to generate authenticated quotes. It is totally free to use.{% endblock %}
+{% block ogurl %}https://25services.com/quotes-generator/{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/ServiceImages/16_random_quotes_generator.jpg' %}{% endblock %}
+
+{% block twittertitle %}Random Quote Generator{% endblock %}
+{% block twitterdescription %}Generate your favorite quotes with random quotes generator. It is one of the best sites for quotes to generate authenticated quotes. It is totally free to use.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/ServiceImages/16_random_quotes_generator.jpg' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/quotes-generator/{% endblock %}
+
+{% block externalFiles %}
+    <link rel="stylesheet" href="{% static '16_random_quotes_generator/css/16_random_quotes_generator.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+
+{% endblock %}
+
+{% block stylesheet %}
+
+    <style>
+    body{
+        background-color: cadetblue;
+    }
+    nav{
+        display: none!important;
+    }
+    footer{
+        margin-top: 50px!important;
+    }
+    </style>
+{% endblock %}
+
+
+{% block content %}
+
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h1><span class="main-color">Random Quote</span><br />Generator</h1>
+      <p>The best quotes in one place. You can easily see the best quotes with one click.</p>
+    </div>
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-xs-6">
+          <a id="next-quote" class="btn btn-lg btn-default btn-block" href="#"><i class="fa fa-refresh"></i> Next Quote</a>
+        </div>
+        <div class="col-xs-6">
+          <a id="share" class="btn btn-lg btn-default btn-block" href="#" target="_top"><i class="fa fa-twitter"></i> Share</a>
+        </div>
+      </div>
+
+      <div id="quote-box">
+        <i id="quote-left" class="fa fa-quote-left"></i>
+        <p id="quote"></p>
+        <span id="author" class="main-color"></span>
+        <i id="quote-right" class="fa fa-quote-right"></i>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="hidden"></div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="{% static '16_random_quotes_generator/javascript/16_random_quotes_generator.js' %}"></script>
+
+{% endblock %}

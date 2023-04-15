@@ -1,0 +1,787 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Our All Free digital Services{% endblock %}
+
+{% block description %}25Services.com is providing many services online for free. Such as text to speech, text to pdf converting, online CV maker, QR code generating, etc.{% endblock %}
+{% block keywords %}25Services free services,free services online,free online digital services{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}Our All Free digital Services{% endblock %}
+{% block ogdescription %}25Services.com is providing many services online for free. Such as text to speech, text to pdf converting, online CV maker, QR code generating, etc.{% endblock %}
+{% block ogurl %}https://25services.com/services/{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/logo.png' %}{% endblock %}
+
+{% block twittertitle %}Our All Free digital Services{% endblock %}
+{% block twitterdescription %}25Services.com is providing many services online for free. Such as text to speech, text to pdf converting, online CV maker, QR code generating, etc.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/logo.png' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/services/{% endblock %}
+
+{% block stylesheet %}
+    <style>
+    body{
+        background-color: cadetblue;
+    }
+
+    .wrapper-fostrap {
+          display: table;
+          height: 100%;
+          width: 100%;
+        }
+
+        .container-fostrap {
+          display: table-cell;
+          padding: 1em;
+          text-align: center;
+          vertical-align: middle;
+        }
+
+        @media only screen and (max-width: 480px) {
+
+
+         .card-title{
+             font-size: 22px !important;
+         }
+        }
+
+        .card {
+            overflow: hidden;
+          display: block;
+            margin-bottom: 20px;
+            line-height: 1.42857143;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+            transition: box-shadow .25s;
+        }
+        .card:hover {
+          box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .img-card {
+          width: 100%;
+          height:200px;
+          border-top-left-radius:2px;
+          border-top-right-radius:2px;
+          display:block;
+            overflow: hidden;
+        }
+        .img-card img{
+          width: 100%;
+          height: 200px;
+          object-fit:cover;
+          transition: all .25s ease;
+        }
+        .card-content {
+          padding:15px;
+          text-align:left;
+        }
+        .card-title {
+              margin-top:0px;
+              font-weight: 400;
+              font-size: 24px;
+        }
+        .card-title a {
+          color: #000;
+          text-decoration: none !important;
+        }
+        .card-read-more {
+          border-top: 1px solid #D4D4D4;
+        }
+        .card-read-more a {
+          text-decoration: none !important;
+          padding:10px;
+          font-weight:600;
+          text-transform: uppercase;
+            color: indigo;
+        }
+
+    </style>
+{% endblock %}
+{% block content %}
+    <br><br><br><br>
+
+
+    <section class="wrapper-fostrap" >
+    <div class="container-fostrap">
+        <div>
+            <h1 class="heading" style="color: white">Our All Free digital Services</h1><br>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'AgeCalculator' %}">
+                                <img src="{% static 'images/ServiceImages/11_Age_calculator.JPG' %}" alt="Age Calculator" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'AgeCalculator' %}">
+                                           Age Calculator
+                                      </a>
+                                    </h4>
+                                    <p class="">Find Your Age
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'AgeCalculator' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'CVMaker' %}">
+                                <img src="{% static 'images/ServiceImages/1_cv_maker.png' %}" alt="CV Maker" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'CVMaker' %}">
+                                           CV Maker
+                                      </a>
+                                    </h4>
+                                    <p class="">Build Your Awesome CV
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'CVMaker' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'TextToSpeech' %}">
+                                <img src="{% static 'images/ServiceImages/2_text_to_speech.jpg' %}" alt="Text to Speech" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'TextToSpeech' %}">
+                                           Text to Speech
+                                      </a>
+                                    </h4>
+                                    <p class="">Strong Your Pronunciation
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'TextToSpeech' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'OnlineSignature' %}">
+                                <img src="{% static 'images/ServiceImages/5_online_signature.jpg' %}" alt="Online Signature" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'OnlineSignature' %}">
+                                           Online Signature
+                                      </a>
+                                    </h4>
+                                    <p class="">Make Your Electronic Signature
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'OnlineSignature' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'RandomQuotesGen' %}">
+                                <img src="{% static 'images/ServiceImages/16_random_quotes_generator.jpg' %}" alt="Random Quotes Generator" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'RandomQuotesGen' %}">
+                                           Random Quotes Generator
+                                      </a>
+                                    </h4>
+                                    <p class="">Find Your Favourite Quote
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'RandomQuotesGen' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'IpLocator' %}">
+                                <img src="{% static 'images/ServiceImages/10_my_ip_locator.png' %}" alt="Ip Locator" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'IpLocator' %}">
+                                           Ip Locator
+                                      </a>
+                                    </h4>
+                                    <p class="">Find Your IP Address
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'IpLocator' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'QRcodeGen' %}">
+                                <img src="{% static 'images/ServiceImages/20_qr_code_generator.jpg' %}" alt="QR Code Generator" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'QRcodeGen' %}">
+                                           QR Code Generator
+                                      </a>
+                                    </h4>
+                                    <p class="">Generate Your QR Codes
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'QRcodeGen' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'ColorPicker' %}">
+                                <img src="{% static 'images/ServiceImages/13_color_picker.png' %}" alt="Color Picker" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'ColorPicker' %}">
+                                           Color Picker
+                                      </a>
+                                    </h4>
+                                    <p class="">Pick Your Desire Color
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'ColorPicker' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'CaseConverter' %}">
+                                <img src="{% static 'images/ServiceImages/18_case_converter.jpg' %}" alt="Case Converterr" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'CaseConverter' %}">
+                                           Case Converter
+                                      </a>
+                                    </h4>
+                                    <p class="">Convert Letter Cases
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'CaseConverter' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'PeroidTable' %}">
+                                <img src="{% static 'images/ServiceImages/25_periodic_table.png' %}" alt="Peroidic table" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'PeroidTable' %}">
+                                           Periodic Table
+                                      </a>
+                                    </h4>
+                                    <p class="">Study Periodic Table online
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'PeroidTable' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'YearsCalender' %}">
+                                <img src="{% static 'images/ServiceImages/24_every_year_calender.jpg' %}" alt="Every year calender" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'YearsCalender' %}">
+                                           Every year calender
+                                      </a>
+                                    </h4>
+                                    <p class="">Check Every Year Calendar
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'YearsCalender' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+
+                     <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'SuitableJob' %}">
+                                <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Yours Suitable Job" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'SuitableJob' %}">
+                                           Yours Suitable Job
+                                      </a>
+                                    </h4>
+                                    <p class="">Check Your Able Job
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'SuitableJob' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'FutureIndicator' %}">
+                                <img src="{% static 'images/ServiceImages/22_future_indicator.jpg' %}" alt="Future Indicator" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'FutureIndicator' %}">
+                                           Future Indicator
+                                      </a>
+                                    </h4>
+                                    <p class="">Check Your Future
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'FutureIndicator' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'NamesGenerator' %}">
+                                <img src="{% static 'images/ServiceImages/21_names_generator.png' %}" alt="Names Generator" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'NamesGenerator' %}">
+                                           Names Generator
+                                      </a>
+                                    </h4>
+                                    <p class="">Generate Different Names
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'NamesGenerator' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+                     <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'CarColorChoose' %}">
+                                <img src="{% static 'images/ServiceImages/19_car_painter.png' %}" alt="Car painter" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'CarColorChoose' %}">
+                                           Car Painter
+                                      </a>
+                                    </h4>
+                                    <p class="">Check Car Color Before Buy
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'CarColorChoose' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'RandomPasswordGen' %}">
+                                <img src="{% static 'images/ServiceImages/17_password_generator.jpg' %}" alt="Random Password Generator" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'RandomPasswordGen' %}">
+                                           Random Password Generator
+                                      </a>
+                                    </h4>
+                                    <p class="">Generate Your Strong Password
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'RandomPasswordGen' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+                     <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'TextToPdf' %}">
+                                <img src="{% static 'images/ServiceImages/15_text_to_pdf.png' %}" alt="Text To Pdf" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'TextToPdf' %}">
+                                           Text To PDF
+                                      </a>
+                                    </h4>
+                                    <p class="">Convert Text To PDF
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'TextToPdf' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'Drawing' %}">
+                                <img src="{% static 'images/ServiceImages/14_drawing.jpg' %}" alt="Drawing" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'Drawing' %}">
+                                           Drawing
+                                      </a>
+                                    </h4>
+                                    <p class="">Do Ultimate Drawing Online for Free
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'Drawing' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+
+                     <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'ScientificCalculator' %}">
+                                <img src="{% static 'images/ServiceImages/12_scientific_calculator.jpg' %}" alt="Scientific Calculator" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'ScientificCalculator' %}">
+                                           Scientific Calculator
+                                      </a>
+                                    </h4>
+                                    <p class="">Use  Scientific Calculator for Free
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'ScientificCalculator' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'AsciToBinary' %}">
+                                <img src="{% static 'images/ServiceImages/9_Ascii_to_binary.jpg' %}" alt="Ascii To Binary" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'AsciToBinary' %}">
+                                           Ascii To Binary
+                                      </a>
+                                    </h4>
+                                    <p class="">Use Ascii To Binary Converter for Free
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'AsciToBinary' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+
+                           <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'DecimalToBinary' %}">
+                                <img src="{% static 'images/ServiceImages/8_decimal_to_binary.JPG' %}" alt="Decimal To Binary" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'DecimalToBinary' %}">
+                                           Decimal To Binary
+                                      </a>
+                                    </h4>
+                                    <p class="">Decimal To Binary Converter
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'DecimalToBinary' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+
+
+
+                     <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'AllUnitsConverter' %}">
+                                <img src="{% static 'images/ServiceImages/7_units_converter.jpg' %}" alt="All Units Converter" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'AllUnitsConverter' %}">
+                                           All Units Converter
+                                      </a>
+                                    </h4>
+                                    <p class="">Convert Your Every Unit
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'AllUnitsConverter' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'TriangleAreaFinder' %}">
+                                <img src="{% static 'images/ServiceImages/6_Triangle_Area_Finder.png' %}" alt="Triangle Area Finder" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'TriangleAreaFinder' %}">
+                                           Triangle Area Finder
+                                      </a>
+                                    </h4>
+                                    <p class="">Find Triangle Inside Area
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'TriangleAreaFinder' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+
+
+                    <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'InternetSpeedChecker' %}">
+                                <img src="{% static 'images/ServiceImages/3_internet_speed_checker.jpg' %}" alt="Internet Speed Checker" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'InternetSpeedChecker' %}">
+                                           Internet Speed Checker
+                                      </a>
+                                    </h4>
+                                    <p class="">Check Your Internet Speed
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'InternetSpeedChecker' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+
+
+
+
+                     <!--Card start-->
+                      <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="{% url 'WordsCounter' %}">
+                                <img src="{% static 'images/ServiceImages/4_words_counter.png' %}" alt="Words Counter" />
+                              </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{% url 'WordsCounter' %}">
+                                           Words Counter
+                                      </a>
+                                    </h4>
+                                    <p class="">Count Your Words
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{% url 'WordsCounter' %}" class="btn btn-link btn-block">Use Services</a>
+                                </div>
+                            </div>
+                        </div>
+                       <!--Card end-->
+
+
+
+                    <br>
+
+                </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <br>
+{% endblock %}

@@ -1,0 +1,410 @@
+html {
+  height: 100%;
+}
+body {
+  background: #777;
+  font-family: 'Merriweather', serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+:before,
+:after,
+div {
+  box-sizing: border-box;
+}
+.page-header {
+  font-size: 2.4em;
+  text-align: center;
+  z-index: 99;
+}
+.page-header h1 {
+  display: inline-block;
+  font-size: 58px;
+  border-bottom: 3px solid #fff;
+  color: #ffffff;
+  line-height: 1.1;
+}
+.page-header h1 span {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+.page-content {
+  padding: 0 2em;
+}
+.page-footer {
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+}
+.controls {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  z-index: 999;
+}
+.card {
+  width: 72vmin;
+  height: 64vmin;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  box-shadow: 0 0 0 100em rgba(34, 34, 34, 0.9), 0 10px 40px rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+}
+.card .spacer {
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+  background: white;
+  box-shadow: 0 1px 0 0 white;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.card .image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.card .image-container > img {
+  position: relative;
+  z-index: 99;
+}
+.card .image-container img {
+  display: block;
+  width: 100%;
+}
+.card .image-container .color-name {
+  position: absolute;
+  z-index: 999;
+  color: #555;
+  width: 100%;
+  bottom: 8%;
+  text-align: center;
+}
+.card .image-container .shading-container img {
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.card .image-container .shading-container .gradient {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#3c4144), color-stop(32%, #535a5e), color-stop(50%, rgba(105, 113, 119, 0.41)), color-stop(73%, rgba(105, 113, 119, 0)), to(rgba(105, 113, 119, 0.18)));
+  background: linear-gradient(to right, #3c4144 0%, #535a5e 32%, rgba(105, 113, 119, 0.41) 50%, rgba(105, 113, 119, 0) 73%, rgba(105, 113, 119, 0.18) 100%);
+  opacity: 0.2;
+}
+.color-picker {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  padding: 2em 0;
+  background: rgba(85, 85, 85, 0.2);
+}
+.color-picker div[class^="swatch-"],
+.color-picker div[class*=" swatch-"] {
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  margin: 4px;
+  padding: 0;
+  position: relative;
+}
+.color-picker div[class^="swatch-"]:hover li,
+.color-picker div[class*=" swatch-"]:hover li {
+  opacity: 1!important;
+}
+.color-picker div[class^="swatch-"] > ul,
+.color-picker div[class*=" swatch-"] > ul {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  z-index: 99;
+  position: absolute;
+  list-style: none;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+  left: -4px;
+  top: -112px;
+}
+.color-picker div[class^="swatch-"] > ul:hover,
+.color-picker div[class*=" swatch-"] > ul:hover {
+  z-index: 999;
+}
+.color-picker div[class^="swatch-"] > ul > li,
+.color-picker div[class*=" swatch-"] > ul > li {
+  height: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  margin: 4px;
+  padding: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 1px 5px rgba(0, 0, 0, 0.3);
+  display: block;
+  background: pink;
+  opacity: 0;
+  position: relative;
+  cursor: pointer;
+}
+.color-picker div[class^="swatch-"] > ul > li:after,
+.color-picker div[class*=" swatch-"] > ul > li:after {
+  position: absolute;
+  left: 60px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 13px;
+  content: attr(data-tooltip);
+  opacity: 0;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+  white-space: nowrap;
+  padding: 4px 10px 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  top: 14px;
+  font-family: sans-serif;
+  pointer-events: none;
+}
+.color-picker div[class^="swatch-"] > ul > li:hover,
+.color-picker div[class*=" swatch-"] > ul > li:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+.color-picker div[class^="swatch-"] > ul > li:hover:after,
+.color-picker div[class*=" swatch-"] > ul > li:hover:after {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.color-picker div[class^="swatch-"] > ul > li:active,
+.color-picker div[class*=" swatch-"] > ul > li:active {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+}
+.color-picker div[class^="swatch-"] > ul > li.centered,
+.color-picker div[class*=" swatch-"] > ul > li.centered {
+  opacity: 1;
+}
+.color-picker div[class^="swatch-"] > ul > li.active,
+.color-picker div[class*=" swatch-"] > ul > li.active {
+  background-image: url(http://iulian-anghel.ro/static-outside/active-white.png);
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.color-picker .swatch-k .subswatch-1 {
+  background: #f7f7f7;
+}
+.color-picker .swatch-k .subswatch-1.active {
+  background-image: url(http://iulian-anghel.ro/static-outside/active-black.png) !important;
+}
+.color-picker .swatch-k .subswatch-2 {
+  background: #b7b7b7;
+}
+.color-picker .swatch-k .subswatch-2.active {
+  background-image: url(http://iulian-anghel.ro/static-outside/active-black.png) !important;
+}
+.color-picker .swatch-k .subswatch-3 {
+  background: #777777;
+}
+.color-picker .swatch-k .subswatch-4 {
+  background: #373737;
+}
+.color-picker .swatch-k .subswatch-5 {
+  background: #000000;
+}
+.color-picker .swatch-ro .subswatch-1 {
+  background: #ffbbc0;
+}
+.color-picker .swatch-ro .subswatch-1.active {
+  background-image: url(http://iulian-anghel.ro/static-outside/active-black.png) !important;
+}
+.color-picker .swatch-ro .subswatch-2 {
+  background: #ff5562;
+}
+.color-picker .swatch-ro .subswatch-2.active {
+  background-image: url(http://iulian-anghel.ro/static-outside/active-black.png) !important;
+}
+.color-picker .swatch-ro .subswatch-3 {
+  background: #ee0012;
+}
+.color-picker .swatch-ro .subswatch-4 {
+  background: #88000a;
+}
+.color-picker .swatch-ro .subswatch-5 {
+  background: #220003;
+}
+.color-picker .swatch-or .subswatch-1 {
+  background: #ffe6ca;
+}
+.color-picker .swatch-or .subswatch-1.active {
+  background-image: url(http://iulian-anghel.ro/static-outside/active-black.png) !important;
+}
+.color-picker .swatch-or .subswatch-2 {
+  background: #feb765;
+}
+.color-picker .swatch-or .subswatch-2.active {
+  background-image: url(http://iulian-anghel.ro/static-outside/active-black.png) !important;
+}
+.color-picker .swatch-or .subswatch-3 {
+  background: #fb8802;
+}
+.color-picker .swatch-or .subswatch-4 {
+  background: #965101;
+}
+.color-picker .swatch-or .subswatch-5 {
+  background: #311a00;
+}
+.color-picker .swatch-ga .subswatch-1 {
+  background: #fff6cb;
+}
+.color-picker .swatch-ga .subswatch-1.active {
+  background-image: url(http://iulian-anghel.ro/static-outside/active-black.png) !important;
+}
+.color-picker .swatch-ga .subswatch-2 {
+  background: #fee566;
+}
+.color-picker .swatch-ga .subswatch-2.active {
+  background-image: url(http://iulian-anghel.ro/static-outside/active-black.png) !important;
+}
+.color-picker .swatch-ga .subswatch-3 {
+  background: #fdd401;
+}
+.color-picker .swatch-ga .subswatch-4 {
+  background: #977f01;
+}
+.color-picker .swatch-ga .subswatch-5 {
+  background: #322a00;
+}
+.color-picker .swatch-ve .subswatch-1 {
+  background: #d9f0c9;
+}
+.color-picker .swatch-ve .subswatch-1.active {
+  background-image: url(http://iulian-anghel.ro/static-outside/active-black.png) !important;
+}
+.color-picker .swatch-ve .subswatch-2 {
+  background: #a1d979;
+}
+.color-picker .swatch-ve .subswatch-2.active {
+  background-image: url(http://iulian-anghel.ro/static-outside/active-black.png) !important;
+}
+.color-picker .swatch-ve .subswatch-3 {
+  background: #6bb834;
+}
+.color-picker .swatch-ve .subswatch-4 {
+  background: #3d691e;
+}
+.color-picker .swatch-ve .subswatch-5 {
+  background: #0f1907;
+}
+.color-picker .swatch-al .subswatch-1 {
+  background: #d6dff6;
+}
+.color-picker .swatch-al .subswatch-1.active {
+  background-image: url(http://iulian-anghel.ro/static-outside/active-black.png) !important;
+}
+.color-picker .swatch-al .subswatch-2 {
+  background: #829de4;
+}
+.color-picker .swatch-al .subswatch-2.active {
+  background-image: url(http://iulian-anghel.ro/static-outside/active-black.png) !important;
+}
+.color-picker .swatch-al .subswatch-3 {
+  background: #2e5bd2;
+}
+.color-picker .swatch-al .subswatch-4 {
+  background: #1c377e;
+}
+.color-picker .swatch-al .subswatch-5 {
+  background: #09122b;
+}
+.color-picker .swatch-vi .subswatch-1 {
+  background: #e4c0ef;
+}
+.color-picker .swatch-vi .subswatch-1.active {
+  background-image: url(http://iulian-anghel.ro/static-outside/active-black.png) !important;
+}
+.color-picker .swatch-vi .subswatch-2 {
+  background: #c16fda;
+}
+.color-picker .swatch-vi .subswatch-2.active {
+  background-image: url(http://iulian-anghel.ro/static-outside/active-black.png) !important;
+}
+.color-picker .swatch-vi .subswatch-3 {
+  background: #952fb4;
+}
+.color-picker .swatch-vi .subswatch-4 {
+  background: #521a63;
+}
+.color-picker .swatch-vi .subswatch-5 {
+  background: #0f0512;
+}
+.color-picker .main-swatches {
+  display: -webkit-box;
+  display: flex;
+  width: auto;
+  margin: 0 auto;
+}
+.ripple {
+  position: absolute;
+  left: -300em;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.1);
+          transform: translateX(-50%) translateY(-50%) scale(0.1);
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+}
+.ripple.scaling {
+  -webkit-animation: scale 1.4s;
+          animation: scale 1.4s;
+}
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0.1);
+            transform: translateX(-50%) translateY(-50%) scale(0.1);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(7);
+            transform: translateX(-50%) translateY(-50%) scale(7);
+  }
+}
+@keyframes scale {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(0.1);
+            transform: translateX(-50%) translateY(-50%) scale(0.1);
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) scale(7);
+            transform: translateX(-50%) translateY(-50%) scale(7);
+  }
+}
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}

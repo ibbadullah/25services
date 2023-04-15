@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Years Calendar{% endblock %}
+
+{% block description %}Check the months and days of different years of pasts and future years with the help of every year calendar. It is the best and authenticated calendar to checks different years.{% endblock %}
+{% block keywords %}previous years calendar,ten years calendar,years calendar,jubilee years calendar,100 years calendar{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}Years Calendar{% endblock %}
+{% block ogdescription %}Check the months and days of different years of pasts and future years with the help of every year calendar. It is the best and authenticated calendar to checks different years.{% endblock %}
+{% block ogurl %}https://25services.com/year-calender/{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/ServiceImages/24_every_year_calender.jpg' %}{% endblock %}
+
+{% block twittertitle %}Years Calendar{% endblock %}
+{% block twitterdescription %}Check the months and days of different years of pasts and future years with the help of every year calendar. It is the best and authenticated calendar to checks different years.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/ServiceImages/24_every_year_calender.jpg' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/year-calender/{% endblock %}
+
+
+{% block stylesheet %}
+
+   <style>
+     body{
+       background-color: #4CA39B;
+     }
+
+     .formDivContent{
+       margin-top: 150px;
+       background-color: white;
+       padding: 25px;
+       width: 70%;
+       margin-left: 15%;
+       border-radius: 15px;
+     }
+
+
+
+     @media only screen and (max-width: 480px){
+
+      .formDivContent{
+       margin-top: 150px;
+       background-color: white;
+       padding: 0px;
+       width: 90%;
+       margin-left: 5%;
+       border-radius: 12px;
+     }
+
+
+     .formDivContent h3{
+      margin-left:10%;
+      font-weight: 500;
+      font-size: 22px;
+      margin-top: 20px!important;
+     }
+
+     }
+
+
+
+    </style>
+
+
+ {% endblock %}
+ {% block content %}
+     <script src="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.css" />
+
+<div class="formDivContent">
+<h3>Years Calendar</h3>
+
+<div data-provide="calendar"></div>
+
+</div>
+
+     <script>
+     new Calendar(document.querySelector('.calendar'));
+
+     </script>
+<br><br>
+{% endblock %}

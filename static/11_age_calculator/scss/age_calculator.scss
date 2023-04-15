@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+* {
+  font-family: raleway;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+.jar {
+  // display: none;
+  // justify-content: space-around;
+  h1 {
+    font-size: 3em;
+    // line-height: 100vh;
+    // margin: 0;
+    text-align: center;
+  }
+  input {
+    height: 60px;
+    // margin-top: 47.5vh;
+    width: 700px;
+    outline: none;
+    font-size: 3em;
+    font-family: raleway;
+    margin: 0 auto;
+    display: block;
+  }
+  button {
+    font-size: 3em;
+    background: #3f51b5;
+    border: none;
+    border-radius: 3px;
+    display: block;
+    margin: 50px auto;
+    color: white;
+  }
+}
+
+.wrap {
+  visibility: hidden;
+  height: 100vh;
+  width: 100vw;
+  div {
+    height: calc(100vh / 6);
+      margin: 0;
+    h1 {
+      margin: 0;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-height: 750px) {
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    div {
+      width: 50vw;
+      height: calc(100vh / 3);
+      h1 {
+        margin: 0;
+        line-height: calc(100vh / 6);
+      }
+      p {
+        margin: 0;
+        line-height: calc(100vh / 6);
+      }
+    }
+  }
+}

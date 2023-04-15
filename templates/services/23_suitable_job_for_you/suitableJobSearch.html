@@ -1,0 +1,902 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ NameU }} suitable Job{% endblock %}
+
+{% block description %}Check {{ NameU }} suitable job. Find what would be the job {{ NameU }}. It's just for fun.{% endblock %}
+{% block keywords %}{{ NameU }} future,{{ NameU }} future indicator{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}Find what would be {{ NameU }} suitable Job{% endblock %}
+{% block ogdescription %}Check {{ NameU }} suitable job. Find what would be the job {{ NameU }}. It's just for fun.{% endblock %}
+{% block ogurl %}https://25services.com/indicate-job?name={{ UrlName }}}{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}{% endblock %}
+
+{% block twittertitle %}Find what would be {{ NameU }} suitable Job{% endblock %}
+{% block twitterdescription %}Check {{ NameU }} suitable job. Find what would be the job {{ NameU }}. It's just for fun.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/indicate-job?name={{ UrlName }}{% endblock %}
+
+{% block stylesheet %}
+
+   <style>
+     body{
+       background-color: wheat;
+     }
+
+     .contentContianer{
+      margin-top: 50px;
+      background-color: white;
+      border-radius: 10px;
+     }
+     .contentContianer h3{
+      margin-left:15%;
+      font-weight: 400;
+     }
+
+     .casesRow{
+       width: 100%;
+       margin:0px;
+       padding: 0px;
+     }
+     .imageDiv{
+
+       text-align: center;
+
+     }
+     .imageDiv img{
+
+       height: 150px;
+       width: 150px;
+       display: flex;
+       margin-left: auto;
+       margin-right: auto;
+       position: relative;
+     }
+     .textDiv{
+
+       text-align: center !important;
+       justify-content: center;
+       align-items: center;
+       position: relative;
+       display: flex;
+
+
+     }
+
+     .textDiv h5{
+       font-size: 24px;
+
+
+     }
+
+     .numberSpan{
+       color:green;
+       font-weight: 600;
+     }
+
+     .shareButton{
+       position: fixed;
+       bottom: 80px;
+       right: 15px;
+       background-color: #3B3998;
+       color: white;
+       padding: 5px 10px 5px 10px;
+       border-style: none;
+       outline: none;
+       border-radius: 6px;
+
+     }
+
+     .shareButton:hover
+     {color:#4CA39B !important;
+       }
+
+    #copyMessaage{
+         position: fixed;
+         bottom: 115px;
+         right: 15px;
+         color: white;
+         background-color: black;
+         padding: 5px;
+         border-radius: 5px;
+         display: none;
+     }
+
+
+    </style>
+{% endblock %}
+
+{% block content %}
+<br><br>
+<div class="container contentContianer">
+  <br>
+  <h3>{{ NameU }} Suitable Job</h3>
+  <hr>
+
+    {% if Name == "a" %}
+
+        <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>Your job will be: <span class="numberSpan">Accounts Assistant</span></h5>
+            </div>
+          </div>
+          <hr>
+
+
+
+
+    {% elif Name == "b" %}
+
+     <div class="row casesRow">
+            <div class="col-6 imageDiv">
+                <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+            </div>
+
+            <div class="col-6 textDiv" >
+              <h5>Your job will be: <span class="numberSpan">Baker</span></h5>
+            </div>
+          </div>
+          <hr>
+
+
+
+
+
+
+          {% elif Name == "c" %}
+
+          <div class="row casesRow">
+                 <div class="col-6 imageDiv">
+                     <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                 </div>
+
+                 <div class="col-6 textDiv" >
+                   <h5>Your job will be: <span class="numberSpan">
+                    CEO of Company</span></h5>
+                 </div>
+               </div>
+               <hr>
+
+
+
+
+
+
+
+
+
+               {% elif Name == "d" %}
+
+               <div class="row casesRow">
+                      <div class="col-6 imageDiv">
+                          <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                      </div>
+
+                      <div class="col-6 textDiv" >
+                        <h5>Your job will be: <span class="numberSpan">Doctor</span></h5>
+                      </div>
+                    </div>
+                    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    {% elif Name == "e" %}
+
+                    <div class="row casesRow">
+                           <div class="col-6 imageDiv">
+                               <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                           </div>
+
+                           <div class="col-6 textDiv" >
+                             <h5>Your job will be: <span class="numberSpan">Engineer</span></h5>
+                           </div>
+                         </div>
+                         <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                         {% elif Name == "f" %}
+
+                         <div class="row casesRow">
+                                <div class="col-6 imageDiv">
+                                    <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                </div>
+
+                                <div class="col-6 textDiv" >
+                                  <h5>Your job will be: <span class="numberSpan">Fraud Investigator</span></h5>
+                                </div>
+                              </div>
+                              <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              {% elif Name == "g" %}
+
+                              <div class="row casesRow">
+                                     <div class="col-6 imageDiv">
+                                         <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                     </div>
+
+                                     <div class="col-6 textDiv" >
+                                       <h5>Your job will be: <span class="numberSpan">Graphic Artist</span></h5>
+                                     </div>
+                                   </div>
+                                   <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   {% elif Name == "h" %}
+
+                                   <div class="row casesRow">
+                                          <div class="col-6 imageDiv">
+                                              <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                          </div>
+
+                                          <div class="col-6 textDiv" >
+                                            <h5>Your job will be: <span class="numberSpan">Hardware Technician</span></h5>
+                                          </div>
+                                        </div>
+                                        <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        {% elif Name == "i" %}
+
+                                        <div class="row casesRow">
+                                               <div class="col-6 imageDiv">
+                                                   <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                               </div>
+
+                                               <div class="col-6 textDiv" >
+                                                 <h5>Your job will be: <span class="numberSpan">Instrument Specialist</span></h5>
+                                               </div>
+                                             </div>
+                                             <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                             {% elif Name == "j" %}
+
+                                             <div class="row casesRow">
+                                                    <div class="col-6 imageDiv">
+                                                        <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                    </div>
+
+                                                    <div class="col-6 textDiv" >
+                                                      <h5>Your job will be: <span class="numberSpan">Joker</span></h5>
+                                                    </div>
+                                                  </div>
+                                                  <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  {% elif Name == "k" %}
+
+                                                  <div class="row casesRow">
+                                                         <div class="col-6 imageDiv">
+                                                             <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                         </div>
+
+                                                         <div class="col-6 textDiv" >
+                                                           <h5>Your job will be: <span class="numberSpan">Kitchen Manager</span></h5>
+                                                         </div>
+                                                       </div>
+                                                       <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                       {% elif Name == "l" %}
+
+                                                       <div class="row casesRow">
+                                                              <div class="col-6 imageDiv">
+                                                                  <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                              </div>
+
+                                                              <div class="col-6 textDiv" >
+                                                                <h5>Your job will be: <span class="numberSpan">
+                                                                  Lab Manager</span></h5>
+                                                              </div>
+                                                            </div>
+                                                            <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            {% elif Name == "m" %}
+
+                                                            <div class="row casesRow">
+                                                                   <div class="col-6 imageDiv">
+                                                                       <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                                   </div>
+
+                                                                   <div class="col-6 textDiv" >
+                                                                     <h5>Your job will be: <span class="numberSpan">Manager</span></h5>
+                                                                   </div>
+                                                                 </div>
+                                                                 <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                 {% elif Name == "n" %}
+
+                                                                 <div class="row casesRow">
+                                                                        <div class="col-6 imageDiv">
+                                                                            <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                                        </div>
+
+                                                                        <div class="col-6 textDiv" >
+                                                                          <h5>Your job will be: <span class="numberSpan">Nail Maker</span></h5>
+                                                                        </div>
+                                                                      </div>
+                                                                      <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                      {% elif Name == "o" %}
+
+                                                                      <div class="row casesRow">
+                                                                             <div class="col-6 imageDiv">
+                                                                                 <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                                             </div>
+
+                                                                             <div class="col-6 textDiv" >
+                                                                               <h5>Your job will be: <span class="numberSpan">Ophthalmologist</span></h5>
+                                                                             </div>
+                                                                           </div>
+                                                                           <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                           {% elif Name == "p" %}
+
+                                                                           <div class="row casesRow">
+                                                                                  <div class="col-6 imageDiv">
+                                                                                      <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                                                  </div>
+
+                                                                                  <div class="col-6 textDiv" >
+                                                                                    <h5>Your job will be: <span class="numberSpan">
+                                                                                      President</span></h5>
+                                                                                  </div>
+                                                                                </div>
+                                                                                <hr>
+
+
+
+
+
+
+
+
+
+                                                                                {% elif Name == "q" %}
+
+                                                                                <div class="row casesRow">
+                                                                                       <div class="col-6 imageDiv">
+                                                                                           <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                                                       </div>
+
+                                                                                       <div class="col-6 textDiv" >
+                                                                                         <h5>Your job will be: <span class="numberSpan">Quahogger</span></h5>
+                                                                                       </div>
+                                                                                     </div>
+                                                                                     <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     {% elif Name == "r" %}
+
+                                                                                     <div class="row casesRow">
+                                                                                            <div class="col-6 imageDiv">
+                                                                                                <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                                                            </div>
+
+                                                                                            <div class="col-6 textDiv" >
+                                                                                              <h5>Your job will be: <span class="numberSpan">
+                                                                                                Rabies Inspector</span></h5>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                          <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                          {% elif Name == "s" %}
+
+                                                                                          <div class="row casesRow">
+                                                                                                 <div class="col-6 imageDiv">
+                                                                                                     <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                                                                 </div>
+
+                                                                                                 <div class="col-6 textDiv" >
+                                                                                                   <h5>Your job will be: <span class="numberSpan">Sales Assistant</span></h5>
+                                                                                                 </div>
+                                                                                               </div>
+                                                                                               <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                               {% elif Name == "t" %}
+
+                                                                                               <div class="row casesRow">
+                                                                                                      <div class="col-6 imageDiv">
+                                                                                                          <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                                                                      </div>
+
+                                                                                                      <div class="col-6 textDiv" >
+                                                                                                        <h5>Your job will be: <span class="numberSpan">Teacher</span></h5>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                    {% elif Name == "u" %}
+
+                                                                                                    <div class="row casesRow">
+                                                                                                           <div class="col-6 imageDiv">
+                                                                                                               <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                                                                           </div>
+
+                                                                                                           <div class="col-6 textDiv" >
+                                                                                                             <h5>Your job will be: <span class="numberSpan">Uber Driver</span></h5>
+                                                                                                           </div>
+                                                                                                         </div>
+                                                                                                         <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                         {% elif Name == "v" %}
+
+                                                                                                         <div class="row casesRow">
+                                                                                                                <div class="col-6 imageDiv">
+                                                                                                                    <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                                                                                </div>
+
+                                                                                                                <div class="col-6 textDiv" >
+                                                                                                                  <h5>Your job will be: <span class="numberSpan">Vascular Technologist</span></h5>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                              <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                              {% elif Name == "w" %}
+
+                                                                                                              <div class="row casesRow">
+                                                                                                                     <div class="col-6 imageDiv">
+                                                                                                                         <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                                                                                     </div>
+
+                                                                                                                     <div class="col-6 textDiv" >
+                                                                                                                       <h5>Your job will be: <span class="numberSpan">Web Content Writer</span></h5>
+                                                                                                                     </div>
+                                                                                                                   </div>
+                                                                                                                   <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                   {% elif Name == "x" %}
+
+                                                                                                                   <div class="row casesRow">
+                                                                                                                          <div class="col-6 imageDiv">
+                                                                                                                              <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                                                                                          </div>
+
+                                                                                                                          <div class="col-6 textDiv" >
+                                                                                                                            <h5>Your job will be: <span class="numberSpan">X Ray Expert</span></h5>
+                                                                                                                          </div>
+                                                                                                                        </div>
+                                                                                                                        <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                        {% elif Name == "y" %}
+
+                                                                                                                        <div class="row casesRow">
+                                                                                                                               <div class="col-6 imageDiv">
+                                                                                                                                   <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                                                                                               </div>
+
+                                                                                                                               <div class="col-6 textDiv" >
+                                                                                                                                 <h5>Your job will be: <span class="numberSpan">Youth Development Specialist</span></h5>
+                                                                                                                               </div>
+                                                                                                                             </div>
+                                                                                                                             <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                             {% elif Name == "z" %}
+
+                                                                                                                             <div class="row casesRow">
+                                                                                                                                    <div class="col-6 imageDiv">
+                                                                                                                                        <img src="{% static 'images/ServiceImages/23_suitable_job_for_you.png' %}" alt="Job">
+                                                                                                                                    </div>
+
+                                                                                                                                    <div class="col-6 textDiv" >
+                                                                                                                                      <h5>Your job will be: <span class="numberSpan">Zoo Keeper</span></h5>
+                                                                                                                                    </div>
+                                                                                                                                  </div>
+                                                                                                                                  <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {% endif %}
+
+</div>
+
+
+
+    <br>
+
+    <h6 id="copyMessaage">Copied</h6>
+<button onclick="copyLink()" class="shareButton" id="copyBtnURl">Share&nbsp;<i class="fa fa-share"></i></button>
+
+
+
+     <script>
+
+
+     function copyLink()
+    {
+
+        var dummy = document.createElement('input'),
+          text = window.location.href;
+        document.body.appendChild(dummy);
+        dummy.value = text;
+        dummy.select();
+        document.execCommand('copy');
+        document.body.removeChild(dummy);
+        document.getElementById('copyMessaage').style.display = "block";
+        alert('Link copied. Now share it on your social media profiles.');
+    }
+
+    </script>
+{% endblock %}

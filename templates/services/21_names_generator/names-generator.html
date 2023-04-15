@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Best Names Generator Online Free{% endblock %}
+
+{% block description %}Generate different names of different people with help of a name generator. It is one of the best name generator to generate names of males and females with one click.{% endblock %}
+{% block keywords %}baby names generator,muslim names generator,hindi names for girls,old english names generator,hindi names{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}Best Names Generator Online Free{% endblock %}
+{% block ogdescription %}Generate different names of different people with help of a name generator. It is one of the best name generator to generate names of males and females with one click.{% endblock %}
+{% block ogurl %}https://25services.com/names-generator/{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/ServiceImages/21_names_generator.png' %}{% endblock %}
+
+{% block twittertitle %}Best Names Generator Online Free{% endblock %}
+{% block twitterdescription %}Generate different names of different people with help of a name generator. It is one of the best name generator to generate names of males and females with one click.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/ServiceImages/21_names_generator.png' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/names-generator/{% endblock %}
+
+{% block stylesheet %}
+   <style>
+     body{
+       background-color: #4CA39B;
+     }
+
+     .formDivContent{
+       margin-top: 150px;
+       background-color: white;
+       padding: 25px;
+       width: 70%;
+       margin-left: 15%;
+       border-radius: 15px;
+     }
+
+
+     .contentContianer h3{
+      margin-left:15%;
+      font-weight: 400;
+     }
+     #inputForm{
+       width: 70%;
+       margin-left:15%;
+     }
+     @media only screen and (max-width: 480px){
+
+      .formDivContent{
+       margin-top: 150px;
+       background-color: white;
+       padding: 0px;
+       width: 90%;
+       margin-left: 5%;
+       border-radius: 12px;
+     }
+
+
+     .contentContianer h3{
+      margin-left:10%;
+      font-weight: 400;
+      font-size: 22px;
+     }
+     #inputForm{
+       width: 80%;
+       margin-left:10%;
+     }
+
+     }
+
+    </style>
+
+{% endblock %}
+
+
+{% block content %}
+<div class="formDivContent">
+<div class="container contentContianer">
+  <br>
+  <h3>Best Names Generator Online Free</h3>
+  <form action="{% url 'NamesGenerator' %}" method="post" id="inputForm">
+      {% csrf_token %}
+      <div class="form-group">
+      <select name="category" id="" class="form-control" required>
+        <option value="" disabled selected>Select Category</option>
+        <option value="Muslim">Muslim Names</option>
+        <option value="English">English Names</option>
+        <option value="Hindi">Hindi Names</option>
+      </select>
+    </div>
+
+      <div class="form-group">
+      <select name="gender" id="" class="form-control" required>
+        <option value="" disabled selected>Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+
+     <div class="form-group">
+      <select name="range" id="" class="form-control" required>
+        <option value="" disabled selected>Select Range</option>
+        <option value="1-50">1-50</option>
+        <option value="50+">More than 50</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-info form-control">Generate</button>
+    </div>
+  </form>
+  <br>
+</div>
+
+<div style="display: {{ display }}; width: 80%;margin-left: 10%">
+<hr>
+  <table class="table table-bordered center-block">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col" colspan="3">Name</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for d in Data %}
+    <tr>
+        <th scope="row">{{ forloop.counter }}</th>
+        <td colspan="3">{{ d }}</td>
+    </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+</div>
+
+
+</div>
+<br>
+    <br><br>
+
+{% endblock %}

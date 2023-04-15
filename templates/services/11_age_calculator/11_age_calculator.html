@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Age Calculator Online{% endblock %}
+
+{% block description %}Find your age with help of an age calculator. It will show you your age in months, weeks, days, hours, minutes, and seconds. It is one of the accurate age calculator.{% endblock %}
+{% block keywords %}pearson age calculator,age calculator online,exact age calculator,online age calculator,korean age calculator{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}Age Calculator Online{% endblock %}
+{% block ogdescription %}Find your age with help of an age calculator. It will show you your age in months, weeks, days, hours, minutes, and seconds. It is one of the accurate age calculator.{% endblock %}
+{% block ogurl %}https://25services.com/age-calculator/{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/ServiceImages/11_Age_calculator.JPG' %}{% endblock %}
+
+{% block twittertitle %}Age Calculator Online{% endblock %}
+{% block twitterdescription %}Find your age with help of an age calculator. It will show you your age in months, weeks, days, hours, minutes, and seconds. It is one of the accurate age calculator.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/ServiceImages/11_Age_calculator.JPG' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/age-calculator/{% endblock %}
+
+{% block externalFiles %}
+    <link rel="stylesheet" href="{% static '11_age_calculator/scss/age_calculator.scss' %}">
+{% endblock %}
+
+{% block stylesheet %}
+
+    <style>
+
+    body{background-color: cadetblue;}
+.note{color: #8A0C0C;}
+.note1{color: black;
+background-color: #FBFF42FF;}
+
+    </style>
+{% endblock %}
+
+
+
+
+
+{% block content %}
+
+  <div class="jar container jumbotron" style="margin-top: 120px; margin-bottom: 20px">
+    <h1>Please Enter Your Birth date and Time</h1>
+    <h4 class="note">Note:</h4>
+    <p class="note1 container">Please add Day, month, year, hours, minutes and seconds for an accurate result.</p>
+    <input type="datetime-local" class="start" />
+    <button class="done btn btn-info">Find my Age</button>
+  </div>
+
+  <div class="wrap container jumbotron" style="margin-top: 50px; margin-bottom: 50px">
+      
+      <div>
+      <h1>Age in Years</h1>
+      <p class="year"></p>
+    </div>
+      
+    <div>
+        
+      <h1>Age in months</h1>
+      <p class="mon"></p>
+    </div>
+    <div>
+      <h1>Age in weeks</h1>
+      <p class="week"></p>
+    </div>
+    <div>
+      <h1>Age in days</h1>
+      <p class="day"></p>
+    </div>
+    <div>
+      <h1>Age in hours</h1>
+      <p class="hour"></p>
+    </div>
+    <div>
+      <h1>Age in minutes</h1>
+      <p class="min"></p>
+    </div>
+    <div>
+      <h1>Age in seconds
+      </h1>
+      <p class="sec"></p>
+    </div>
+  </div>
+
+
+
+    <script src="{% static '11_age_calculator/javascript/age_calculator.js' %}"></script>
+
+
+{% endblock %}

@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Decimal to Binary Conversion{% endblock %}
+
+{% block description %}One of the best converter for decimal to binary. It gives accurate result and easy to use it. You can convert decimal into binary in a few seconds by putting the value.{% endblock %}
+{% block keywords %}decimal to binary conversion,convert from decimal to binary,decimal to binary converter,decimal to binary convertor,online decimal to binary converter{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}Decimal to Binary Conversion{% endblock %}
+{% block ogdescription %}One of the best converter for decimal to binary. It gives accurate result and easy to use it. You can convert decimal into binary in a few seconds by putting the value.{% endblock %}
+{% block ogurl %}https://25services.com/decimal-to-binary/{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/ServiceImages/8_decimal_to_binary.JPG' %}{% endblock %}
+
+{% block twittertitle %}Decimal to Binary Conversion{% endblock %}
+{% block twitterdescription %}One of the best converter for decimal to binary. It gives accurate result and easy to use it. You can convert decimal into binary in a few seconds by putting the value.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/ServiceImages/8_decimal_to_binary.JPG' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/decimal-to-binary/{% endblock %}
+
+{% block stylesheet %}
+    <style>
+        #app{
+            margin-top: 200px !important;
+            margin-bottom: 50px !important;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+
+
+  <link rel="stylesheet" href="{% static '8_decimal_to_binary/css/decimal_to_binary.css' %}">
+  <script src="{% static '8_decimal_to_binary/javascript/decimal_to_binary.js' %}"></script>
+
+
+
+<div class="container mt-3 mt-sm-5" id="app">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <p>Enter a decimal number below to convert it to binary. Or, enter a binary number to convert it to decimal.</p>
+    </div><!-- /col -->
+  </div><!-- /row -->
+
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <label for="decimal">Decimal</label>
+      <input class="form-control" id="decimal" type="number" v-model="decimal"/>
+    </div><!-- /col -->
+
+    <div class="col-md-4">
+      <label for="binary">Binary</label>
+      <input class="form-control" id="binary" type="number" v-model="binary"/>
+    </div><!-- /col -->
+  </div><!-- /row -->
+</div><!-- /container -->
+
+<script>
+
+
+  var app = new Vue({
+    el: '#app',
+    data: {
+      decimal: '',
+    },
+    computed: {
+      binary: {
+        get: function () {
+          if (this.decimal !== '') return (this.decimal >>> 0).toString(2);
+          return '';
+        },
+
+        set: function (newValue) {
+          if (newValue !== '') {
+            this.decimal = parseInt(newValue, 2);
+          } else {
+            this.decimal = '';
+          }
+        },
+      },
+    },
+  });
+
+
+  </script>
+
+
+
+{% endblock %}

@@ -1,0 +1,181 @@
+a
+Your job will be: Civil Engineer
+Your salary will be: $4660
+You will have 5 houses
+You will have 2 Childrens
+Your bank balance will be 1.5 Million US Dollars
+
+b
+Your job will be: Doctor
+Your salary will be: $7997
+You will have 1 house
+You will have 2 cars
+You will have 3 Wives
+
+c
+You will have 2 cars
+Your salary will be: $9644
+You will have 3 houses
+You will have 1 wife
+Your bank balance will be 22.5 Million US Dollars
+
+d
+Your job will be: Teacher
+Your salary will be: $2354
+You will have 8 cars
+You will have 2 Wives
+Your bank balance will be 12.5 Million US Dollars
+
+e
+Your job will be: Pilot
+Your salary will be: $7999
+You will have 2 cars
+You will have 3 Wives
+You will have 4 Childrens
+
+f
+Your job will be: Police
+Your salary will be: $8647
+You will have 4 houses
+You will have 2 Wives
+You will have 4 cars
+
+g
+Your job will be: Judge
+Your salary will be: $5675
+You will have 1 house
+You will have 1 car
+Your bank balance will be 2 Million US Dollars
+
+h
+You will have 4 cars
+Your salary will be: $1124
+You will have 2 houses
+You will have 1 wife
+Your bank balance will be 33.5 Million US Dollars
+
+i
+Your job will be: Ceo of Company
+You will have 2 cars
+You will have 4 houses
+You will have 1 wife
+Your bank balance will be 2.7 Million US Dollars
+
+j
+Your job will be: Astronomer
+Your salary will be: $4577
+You will have 5 cars
+You will have 1 wife
+You will have 6 Childrens
+
+k
+Your job will be: Hair cutter
+Your salary will be: $6745
+You will have 5 houses
+You will have 3 Wives
+You will have 3 cars
+
+l
+Your job will be: Book Seller
+You will have 4 cars
+You will have 6 houses
+You will have 2 Wives
+Your bank balance will be 27.15 Million US Dollars
+
+m
+Your job will be: Cooker
+Your salary will be: $2580
+You will have 7 cars
+You will have 2 Wives
+Your bank balance will be 247.15 Million US Dollars
+
+n
+Your job will be: Professor
+Your salary will be: $4570
+You will have 1 Children
+You will have 3 Wives
+You will have 9 cars
+
+o
+Your job will be: Software Engineer
+Your salary will be: $3080
+You will have 3 houses
+You will have 7 cars
+Your bank balance will be 475.05 Million US Dollars
+
+p
+Your job will be: Surgeon
+Your salary will be: $4780
+You will have 4 houses
+You will have 1 wife
+Your bank balance will be 784.5 Million US Dollars
+
+q
+Your job will be: Car Dealer
+Your salary will be: $3201
+You will have 7 houses
+You will have 3 Wives
+You will have 1 car
+
+r
+Your job will be: Cashier
+You will have 6 cars
+You will have 2 Childrens
+You will have 2 Wives
+Your bank balance will be 99.6 Million US Dollars
+
+s
+Your job will be: Mechanic
+Your salary will be: $7830
+You will have 1 house
+You will have 3 Wives
+You will have 4 cars
+
+t
+Your job will be: Producer
+You will have 1 car
+You will have 4 houses
+You will have 1 wife
+You will have 8 Childrens
+
+u
+Your job will be: Motivational Speaker
+Your salary will be: $7860
+You will have 3 houses
+You will have 2 Wives
+Your bank balance will be 4.22 Million US Dollars
+
+v
+Your job will be: Cooker
+Your salary will be: $6560
+You will have 4 cars
+You will have 3 Wives
+Your bank balance will be 12.15 Million US Dollars
+
+w
+Your job will be: Social Activist
+You will have 4 Childrens
+You will have 2 houses
+You will have 3 Wives
+Your bank balance will be 12.5 Million US Dollars
+
+x
+Your job will be: Baker
+Your salary will be: $5560
+You will have 8 houses
+You will have 3 Wives
+Your bank balance will be 88.5 Million US Dollars
+
+y
+Your job will be: Shopkeeper
+Your salary will be: $4880
+You will have 6 houses
+You will have 2 Wives
+You will have 1 car
+
+z
+You will have 6 cars
+Your salary will be: $4179
+You will have 5 houses
+You will have 3 Wives
+Your bank balance will be 69.5 Million US Dollars

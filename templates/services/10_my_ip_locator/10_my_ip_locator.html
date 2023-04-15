@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}IP Locator Online{% endblock %}
+
+{% block description %}Find your internet protocol address with help of an IP locator. It gives you the details of your location, internet which you use. It is one of the best IP locators.{% endblock %}
+{% block keywords %}ip locator app,ip locator online,precise ip locator,ip locator free,ip locator finder{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}IP Locator Online{% endblock %}
+{% block ogdescription %}Find your internet protocol address with help of an IP locator. It gives you the details of your location, internet which you use. It is one of the best IP locators.{% endblock %}
+{% block ogurl %}https://25services.com/ip-locator/{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/ServiceImages/10_my_ip_locator.png' %}{% endblock %}
+
+{% block twittertitle %}IP Locator Online{% endblock %}
+{% block twitterdescription %}Find your internet protocol address with help of an IP locator. It gives you the details of your location, internet which you use. It is one of the best IP locators.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/ServiceImages/10_my_ip_locator.png' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/ip-locator/{% endblock %}
+
+{% block externalFiles %}
+    <link rel="stylesheet" href="{% static '10_my_ip_locator/css/10_my_ip_locator.css' %}">
+{% endblock %}
+
+{% block stylesheet %}
+
+    <style>
+    body{
+        background-color: cadetblue;
+    }
+    </style>
+{% endblock %}
+
+
+{% block content %}
+    <div id="app" style="margin-top: 120px; margin-bottom: 50px">
+        <h1>IP Locator Online</h1>
+        <h2>Your IP is: {{ Ip }}</h2>
+      </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="{% static '10_my_ip_locator/javascript/10_my_ip_locator1.js' %}"></script>
+    <script src="{% static '10_my_ip_locator/javascript/10_my_ip_locator2.js' %}"></script>
+    <script src="{% static '10_my_ip_locator/javascript/10_my_ip_locator3.js' %}"></script>
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Sitemap - 25Services{% endblock %}
+
+{% block description %}The sitemap of 25Services is a very simple one. You can see the entire structure of the website in the sitemap. All our services are free.{% endblock %}
+{% block keywords %}25services sitemap,sitemap 25services,25services user sitemap{% endblock %}
+{% block robots %}index, follow{% endblock %}
+
+{% block ogtitle %}Sitemap{% endblock %}
+{% block ogdescription %}The sitemap of 25Services is a very simple one. You can see the entire structure of the website in the sitemap. All our services are free.{% endblock %}
+{% block ogurl %}https://25services.com/sitemap/{% endblock %}
+{% block ogimage %}https://25services.com{% static 'images/logo.png' %}{% endblock %}
+
+{% block twittertitle %}Sitemap{% endblock %}
+{% block twitterdescription %}The sitemap of 25Services is a very simple one. You can see the entire structure of the website in the sitemap. All our services are free.{% endblock %}
+{% block twitterimage %}https://25services.com{% static 'images/logo.png' %}{% endblock %}
+
+{% block pageurl %}https://25services.com/sitemap/{% endblock %}
+
+
+{% block stylesheet %}
+    <style>
+    body{
+        background-color: cadetblue;
+    }
+    </style>
+{% endblock %}
+{% block content %}
+    <br><br><br><br>
+    <div class="container jumbotron">
+    <h1>Sitemap</h1>
+
+   <h2>Home</h2>
+   <p><a href="{% url 'HomeView' %}">Home</a></p>
+
+    <h2>Contact Us</h2>
+   <p><a href="{% url 'ContactUsView' %}">Contact Us</a></p>
+
+   <h2>Terms Conditions</h2>
+   <p><a href="{% url 'TermsCondtitions' %}">Terms Conditions</a></p>
+
+   <h2>Services</h2>
+   <p><a href="{% url 'AllServices' %}">All Services</a></p>
+
+    </div>
+    <br>
+{% endblock %}
